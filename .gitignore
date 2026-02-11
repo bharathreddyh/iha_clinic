@@ -1,0 +1,76 @@
+# Miscellaneous
+*.class
+*.log
+*.pyc
+*.swp
+.DS_Store
+.atom/
+.buildlog/
+.history
+.svn/
+migrate_working_dir/
+
+# IntelliJ related
+*.iml
+*.ipr
+*.iws
+.idea/
+
+# The .vscode folder contains launch configuration and tasks you configure in
+# VS Code which you may wish to be included in version control, so this line
+# is commented out by default.
+#.vscode/
+
+# Flutter/Dart/Pub related
+**/doc/api/
+**/ios/Flutter/.last_build_id
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+.pub-cache/
+.pub/
+/build/
+
+# Symbolication related
+app.*.symbols
+
+# Obfuscation related
+app.*.map.json
+
+# Android Studio will place build artifacts here
+/android/app/debug
+/android/app/profile
+/android/app/release
+
+# Firebase
+serviceAccountKey.json
+google-services.json
+
+# Secrets
+*.env
+*_config.dart
+!app_config.dart
+
+# Node modules (for firebase scripts)
+node_modules/
+package-lock.json
+```
+
+---
+
+### **Step 6: Create GitHub Repository**
+
+1. Go to: https://github.com/
+2. Sign in (or create account if you don't have one)
+3. Click the **"+"** icon (top right) → **New repository**
+4. Fill in:
+   - **Repository name:** `patient-education-platform`
+   - **Description:** "Patient education platform for clinics"
+   - **Visibility:** Choose **Private** (recommended) or Public
+   - **DON'T** check "Initialize with README" (we already have code)
+5. Click **Create repository**
+
+**Copy the repository URL shown on the next page:**
+```
+https://github.com/your-username/patient-education-platform.git
