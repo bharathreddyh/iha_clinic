@@ -1,11 +1,19 @@
 import 'package:flutter/material.dart';
 
-class HemorrhagicCystScreen extends StatelessWidget {
+class HemorrhagicCystScreen extends StatefulWidget {
   const HemorrhagicCystScreen({super.key});
 
+  @override
+  State<HemorrhagicCystScreen> createState() => _HemorrhagicCystScreenState();
+}
+
+class _HemorrhagicCystScreenState extends State<HemorrhagicCystScreen> {
   static const Color _themeColor = Color(0xFFAD1457);
 
-  static const List<Map<String, String>> _sections = [
+  String _language = 'en'; // 'en' or 'kn'
+
+  // ---------- English content ----------
+  static const List<Map<String, String>> _sectionsEn = [
     {
       'title': 'What is a Hemorrhagic Ovarian Cyst?',
       'body':
@@ -70,32 +78,164 @@ class HemorrhagicCystScreen extends StatelessWidget {
     },
   ];
 
-  static const List<Map<String, String>> _images = [
+  // ---------- Kannada content ----------
+  static const List<Map<String, String>> _sectionsKn = [
     {
-      'label': 'Ultrasound — Typical appearance',
-      'description': 'Characteristic "cobweb" pattern of a hemorrhagic cyst on transvaginal ultrasound.',
+      'title': 'ರಕ್ತಸ್ರಾವದ ಅಂಡಾಶಯದ ಚೀಲ (ಸಿಸ್ಟ್) ಎಂದರೇನು?',
+      'body':
+          'ರಕ್ತಸ್ರಾವದ ಅಂಡಾಶಯದ ಚೀಲ (ಹೆಮರಾಜಿಕ್ ಓವೇರಿಯನ್ ಸಿಸ್ಟ್) ಎಂದರೆ ಫೋಲಿಕ್ಯುಲರ್ ಅಥವಾ ಕಾರ್ಪಸ್ ಲೂಟಿಯಂ ಚೀಲದ ಒಳಗೆ ರಕ್ತಸ್ರಾವ ಉಂಟಾದಾಗ ರೂಪುಗೊಳ್ಳುವ ಒಂದು ಕ್ರಿಯಾತ್ಮಕ ಚೀಲವಾಗಿದೆ. ಈ ಚೀಲಗಳು ಸಂತಾನೋತ್ಪತ್ತಿ ವಯಸ್ಸಿನ ಮಹಿಳೆಯರಲ್ಲಿ ಸಾಮಾನ್ಯವಾಗಿ ಕಂಡುಬರುತ್ತವೆ ಮತ್ತು ಇವು ಋತುಚಕ್ರದ ಸಾಮಾನ್ಯ ಭಾಗವಾಗಿರುತ್ತವೆ.\n\n'
+              'ಹೆಚ್ಚಿನ ರಕ್ತಸ್ರಾವದ ಚೀಲಗಳು ಹಾನಿಕರವಲ್ಲ ಮತ್ತು ಯಾವುದೇ ಚಿಕಿತ್ಸೆಯಿಲ್ಲದೆ ಒಂದರಿಂದ ಮೂರು ಋತುಚಕ್ರಗಳ ಒಳಗೆ ತಾವಾಗಿಯೇ ಕರಗಿಹೋಗುತ್ತವೆ. ಚೀಲದ ಒಳಗಿನ ರಕ್ತಸ್ರಾವದಿಂದ ಅಲ್ಟ್ರಾಸೌಂಡ್‌ನಲ್ಲಿ ವಿಶಿಷ್ಟವಾದ ಚಿತ್ರಣ ಕಂಡುಬರುತ್ತದೆ.',
     },
     {
-      'label': 'Doppler Imaging',
-      'description': 'Doppler ultrasound showing peripheral blood flow around the cyst with no internal vascularity.',
+      'title': 'ಕಾರಣಗಳು ಮತ್ತು ಅಪಾಯಕಾರಿ ಅಂಶಗಳು',
+      'body':
+          'ಚೀಲದ ಗೋಡೆಯಲ್ಲಿನ ರಕ್ತನಾಳವು ಒಡೆದಾಗ ಮತ್ತು ಚೀಲದ ಕುಳಿಯಲ್ಲಿ ರಕ್ತವು ತುಂಬಿಕೊಂಡಾಗ ರಕ್ತಸ್ರಾವದ ಅಂಡಾಶಯದ ಚೀಲಗಳು ಬೆಳೆಯುತ್ತವೆ.\n\n'
+              'ಸಾಮಾನ್ಯ ಅಪಾಯಕಾರಿ ಅಂಶಗಳು:\n'
+              '• ಸಾಮಾನ್ಯ ಅಂಡೋತ್ಪತ್ತಿ — ಅತ್ಯಂತ ಸಾಮಾನ್ಯ ಕಾರಣ\n'
+              '• ಋತುಚಕ್ರದ ಸಮಯದಲ್ಲಿ ಹಾರ್ಮೋನ್ ಏರಿಳಿತಗಳು\n'
+              '• ರಕ್ತ ತೆಳುಗೊಳಿಸುವ ಔಷಧಿಗಳ (ಆ್ಯಂಟಿಕೊಯಾಗ್ಯುಲೆಂಟ್) ಬಳಕೆ\n'
+              '• ರಕ್ತಸ್ರಾವ ಸಂಬಂಧಿತ ಕಾಯಿಲೆಗಳು\n'
+              '• ಫಲವತ್ತತೆ ಚಿಕಿತ್ಸೆಯ ಸಮಯದಲ್ಲಿ ಹಾರ್ಮೋನ್ ಉತ್ತೇಜನ',
     },
     {
-      'label': 'Cyst Resolution',
-      'description': 'Follow-up ultrasound showing near-complete resolution after 6 weeks.',
+      'title': 'ರೋಗಲಕ್ಷಣಗಳು',
+      'body':
+          'ಅನೇಕ ರಕ್ತಸ್ರಾವದ ಚೀಲಗಳು ಯಾವುದೇ ರೋಗಲಕ್ಷಣಗಳನ್ನು ಉಂಟುಮಾಡುವುದಿಲ್ಲ ಮತ್ತು ಅಲ್ಟ್ರಾಸೌಂಡ್ ಪರೀಕ್ಷೆಯ ಸಮಯದಲ್ಲಿ ಆಕಸ್ಮಿಕವಾಗಿ ಕಂಡುಬರುತ್ತವೆ. ರೋಗಲಕ್ಷಣಗಳು ಕಂಡುಬಂದಾಗ, ಅವು ಈ ಕೆಳಗಿನವನ್ನು ಒಳಗೊಂಡಿರಬಹುದು:\n\n'
+              '• ಕೆಳಹೊಟ್ಟೆಯ ಒಂದು ಬದಿಯಲ್ಲಿ ಇದ್ದಕ್ಕಿದ್ದಂತೆ ತೀವ್ರ ನೋವು\n'
+              '• ಸೊಂಟದ ಭಾಗದಲ್ಲಿ ಮಂದ ನೋವು\n'
+              '• ಉಬ್ಬುವಿಕೆ ಅಥವಾ ಭಾರ ಎನಿಸುವುದು\n'
+              '• ಲೈಂಗಿಕ ಸಂಪರ್ಕದ ಸಮಯದಲ್ಲಿ ಅಥವಾ ನಂತರ ನೋವು\n'
+              '• ಅನಿಯಮಿತ ಋತುಸ್ರಾವ\n\n'
+              'ಚೀಲವು ಒಡೆದರೆ, ಇದ್ದಕ್ಕಿದ್ದಂತೆ ತೀವ್ರ ನೋವು ಅನುಭವವಾಗಬಹುದು. ನೋವಿನೊಂದಿಗೆ ತಲೆತಿರುಗುವಿಕೆ, ಮೂರ್ಛೆ, ಅಥವಾ ಜ್ವರ ಕಂಡುಬಂದರೆ ತಕ್ಷಣ ವೈದ್ಯಕೀಯ ಸಹಾಯ ಪಡೆಯಿರಿ.',
     },
     {
-      'label': 'Anatomical Illustration',
-      'description': 'Diagram showing a hemorrhagic cyst within the ovary with internal blood collection.',
+      'title': 'ರೋಗನಿರ್ಣಯ',
+      'body':
+          'ರಕ್ತಸ್ರಾವದ ಅಂಡಾಶಯದ ಚೀಲಗಳನ್ನು ಸಾಮಾನ್ಯವಾಗಿ ಈ ಕೆಳಗಿನ ವಿಧಾನಗಳಿಂದ ಪತ್ತೆ ಮಾಡಲಾಗುತ್ತದೆ:\n\n'
+              '೧. ಪೆಲ್ವಿಕ್ ಅಲ್ಟ್ರಾಸೌಂಡ್ — ಪ್ರಾಥಮಿಕ ರೋಗನಿರ್ಣಯ ಸಾಧನ. ರಕ್ತ ಹೆಪ್ಪುಗಟ್ಟುವಿಕೆಯಿಂದ ಚೀಲದಲ್ಲಿ ವಿಶಿಷ್ಟವಾದ "ಜೇಡರ ಬಲೆ" ಅಥವಾ "ಮೀನಿನ ಬಲೆ" ಮಾದರಿಯ ಆಂತರಿಕ ಪ್ರತಿಧ್ವನಿಗಳು ಕಂಡುಬರುತ್ತವೆ.\n\n'
+              '೨. ಡಾಪ್ಲರ್ ಅಲ್ಟ್ರಾಸೌಂಡ್ — ಚೀಲದ ಸುತ್ತಲಿನ ರಕ್ತ ಪ್ರವಾಹವನ್ನು ಮೌಲ್ಯಮಾಪನ ಮಾಡಲು ಮತ್ತು ಅಂಡಾಶಯದ ತಿರುಚುವಿಕೆಯನ್ನು (ಟಾರ್ಶನ್) ತಳ್ಳಿಹಾಕಲು ಸಹಾಯ ಮಾಡುತ್ತದೆ.\n\n'
+              '೩. ರಕ್ತ ಪರೀಕ್ಷೆಗಳು — ಗರ್ಭಧಾರಣೆ ಪರೀಕ್ಷೆ ಮತ್ತು ಗೆಡ್ಡೆಯ ಮಾರ್ಕರ್‌ಗಳನ್ನು (CA-125 ನಂತಹ) ಇತರ ಪರಿಸ್ಥಿತಿಗಳನ್ನು ತಳ್ಳಿಹಾಕಲು ಒಳಗೊಂಡಿರಬಹುದು.\n\n'
+              '೪. ಅನುಸರಣಾ ಚಿತ್ರಣ — ಚೀಲವು ಕರಗುತ್ತಿದೆ ಎಂದು ಖಚಿತಪಡಿಸಲು ೬–೮ ವಾರಗಳ ನಂತರ ಪುನಃ ಅಲ್ಟ್ರಾಸೌಂಡ್ ಮಾಡಲು ಸಾಮಾನ್ಯವಾಗಿ ಶಿಫಾರಸು ಮಾಡಲಾಗುತ್ತದೆ.',
+    },
+    {
+      'title': 'ಚಿಕಿತ್ಸಾ ಆಯ್ಕೆಗಳು',
+      'body':
+          'ಚಿಕಿತ್ಸೆಯು ಚೀಲದ ಗಾತ್ರ, ರೋಗಲಕ್ಷಣಗಳ ತೀವ್ರತೆ, ಮತ್ತು ತೊಡಕುಗಳು ಇವೆಯೇ ಎಂಬುದರ ಮೇಲೆ ಅವಲಂಬಿತವಾಗಿರುತ್ತದೆ.\n\n'
+              'ಅವಲೋಕನ (ಅತ್ಯಂತ ಸಾಮಾನ್ಯ):\n'
+              '• ಹೆಚ್ಚಿನ ಚೀಲಗಳು ೧–೩ ಋತುಚಕ್ರಗಳಲ್ಲಿ ತಾವಾಗಿಯೇ ಕರಗುತ್ತವೆ\n'
+              '• ನಿಮ್ಮ ವೈದ್ಯರು ಅನುಸರಣಾ ಅಲ್ಟ್ರಾಸೌಂಡ್ ಶಿಫಾರಸು ಮಾಡಬಹುದು\n\n'
+              'ಔಷಧಿಗಳು:\n'
+              '• ನೋವು ನಿವಾರಕಗಳು (NSAIDs) — ರೋಗಲಕ್ಷಣ ನಿರ್ವಹಣೆಗಾಗಿ\n'
+              '• ಹೊಸ ಚೀಲಗಳ ರಚನೆಯನ್ನು ತಡೆಯಲು ಹಾರ್ಮೋನ್ ಗರ್ಭನಿರೋಧಕಗಳನ್ನು ಶಿಫಾರಸು ಮಾಡಬಹುದು\n\n'
+              'ಶಸ್ತ್ರಚಿಕಿತ್ಸೆ (ಅಪರೂಪದ ಸಂದರ್ಭಗಳು):\n'
+              '• ಚೀಲವು ದೊಡ್ಡದಾಗಿದ್ದರೆ (>೫ ಸೆಂ.ಮೀ.), ನಿರಂತರವಾಗಿದ್ದರೆ ಅಥವಾ ತೀವ್ರ ರೋಗಲಕ್ಷಣಗಳನ್ನು ಉಂಟುಮಾಡುತ್ತಿದ್ದರೆ ಲ್ಯಾಪರೊಸ್ಕೋಪಿಕ್ ಸಿಸ್ಟೆಕ್ಟಮಿ\n'
+              '• ಅಂಡಾಶಯದ ತಿರುಚುವಿಕೆ ಅಥವಾ ಗಮನಾರ್ಹ ಆಂತರಿಕ ರಕ್ತಸ್ರಾವ ಇದ್ದರೆ ತುರ್ತು ಶಸ್ತ್ರಚಿಕಿತ್ಸೆ',
+    },
+    {
+      'title': 'ವೈದ್ಯರನ್ನು ಯಾವಾಗ ಭೇಟಿ ಮಾಡಬೇಕು?',
+      'body':
+          'ಈ ಕೆಳಗಿನ ಲಕ್ಷಣಗಳು ಕಂಡುಬಂದರೆ ನಿಮ್ಮ ವೈದ್ಯರನ್ನು ಸಂಪರ್ಕಿಸಿ:\n\n'
+              '• ಸುಧಾರಿಸದ ನಿರಂತರ ಸೊಂಟದ ನೋವು\n'
+              '• ಇದ್ದಕ್ಕಿದ್ದಂತೆ ತೀವ್ರವಾದ ಹೊಟ್ಟೆ ನೋವು\n'
+              '• ಜ್ವರ ಅಥವಾ ವಾಂತಿಯೊಂದಿಗೆ ನೋವು\n'
+              '• ತಲೆತಿರುಗುವಿಕೆ, ದೌರ್ಬಲ್ಯ, ಅಥವಾ ಮೂರ್ಛೆ\n'
+              '• ಅಧಿಕ ಅಥವಾ ಅನಿಯಮಿತ ಯೋನಿ ರಕ್ತಸ್ರಾವ\n\n'
+              'ಈ ರೋಗಲಕ್ಷಣಗಳು ಚೀಲ ಒಡೆಯುವಿಕೆ, ಅಂಡಾಶಯದ ತಿರುಚುವಿಕೆ, ಅಥವಾ ತಕ್ಷಣದ ವೈದ್ಯಕೀಯ ಮೌಲ್ಯಮಾಪನ ಅಗತ್ಯವಿರುವ ಇತರ ಪರಿಸ್ಥಿತಿಗಳನ್ನು ಸೂಚಿಸಬಹುದು.',
     },
   ];
+
+  // ---------- UI labels by language ----------
+  static const Map<String, Map<String, String>> _labels = {
+    'en': {
+      'appBar': 'Hemorrhagic Ovarian Cyst',
+      'videoTitle': 'Video Coming Soon',
+      'videoSubtitle': 'Hemorrhagic Ovarian Cyst — Patient Education',
+      'videoCaption': 'Watch: Understanding Hemorrhagic Ovarian Cysts',
+      'sectionHeader': 'About This Condition',
+      'imageHeader': 'Ultrasound & Illustrations',
+      'disclaimer':
+          'This content is for educational purposes only and does not replace professional medical advice. Always consult your doctor for diagnosis and treatment.',
+    },
+    'kn': {
+      'appBar': 'ರಕ್ತಸ್ರಾವದ ಅಂಡಾಶಯದ ಚೀಲ',
+      'videoTitle': 'ವೀಡಿಯೊ ಶೀಘ್ರದಲ್ಲೇ ಬರಲಿದೆ',
+      'videoSubtitle': 'ರಕ್ತಸ್ರಾವದ ಅಂಡಾಶಯದ ಚೀಲ — ರೋಗಿ ಶಿಕ್ಷಣ',
+      'videoCaption':
+          'ನೋಡಿ: ರಕ್ತಸ್ರಾವದ ಅಂಡಾಶಯದ ಚೀಲಗಳನ್ನು ಅರ್ಥಮಾಡಿಕೊಳ್ಳುವುದು',
+      'sectionHeader': 'ಈ ಸ್ಥಿತಿಯ ಬಗ್ಗೆ',
+      'imageHeader': 'ಅಲ್ಟ್ರಾಸೌಂಡ್ ಮತ್ತು ಚಿತ್ರಣಗಳು',
+      'disclaimer':
+          'ಈ ಮಾಹಿತಿಯು ಕೇವಲ ಶೈಕ್ಷಣಿಕ ಉದ್ದೇಶಗಳಿಗಾಗಿ ಮಾತ್ರ ಮತ್ತು ವೃತ್ತಿಪರ ವೈದ್ಯಕೀಯ ಸಲಹೆಯನ್ನು ಬದಲಿಸುವುದಿಲ್ಲ. ರೋಗನಿರ್ಣಯ ಮತ್ತು ಚಿಕಿತ್ಸೆಗಾಗಿ ಯಾವಾಗಲೂ ನಿಮ್ಮ ವೈದ್ಯರನ್ನು ಸಂಪರ್ಕಿಸಿ.',
+    },
+  };
+
+  // ---------- Image labels by language ----------
+  static const Map<String, List<Map<String, String>>> _imagesByLang = {
+    'en': [
+      {
+        'label': 'Ultrasound — Typical appearance',
+        'description':
+            'Characteristic "cobweb" pattern of a hemorrhagic cyst on transvaginal ultrasound.',
+      },
+      {
+        'label': 'Doppler Imaging',
+        'description':
+            'Doppler ultrasound showing peripheral blood flow around the cyst with no internal vascularity.',
+      },
+      {
+        'label': 'Cyst Resolution',
+        'description':
+            'Follow-up ultrasound showing near-complete resolution after 6 weeks.',
+      },
+      {
+        'label': 'Anatomical Illustration',
+        'description':
+            'Diagram showing a hemorrhagic cyst within the ovary with internal blood collection.',
+      },
+    ],
+    'kn': [
+      {
+        'label': 'ಅಲ್ಟ್ರಾಸೌಂಡ್ — ಸಾಮಾನ್ಯ ಚಿತ್ರಣ',
+        'description':
+            'ಟ್ರಾನ್ಸ್‌ವ್ಯಾಜಿನಲ್ ಅಲ್ಟ್ರಾಸೌಂಡ್‌ನಲ್ಲಿ ರಕ್ತಸ್ರಾವದ ಚೀಲದ ವಿಶಿಷ್ಟ "ಜೇಡರ ಬಲೆ" ಮಾದರಿ.',
+      },
+      {
+        'label': 'ಡಾಪ್ಲರ್ ಚಿತ್ರಣ',
+        'description':
+            'ಚೀಲದ ಸುತ್ತ ಬಾಹ್ಯ ರಕ್ತ ಪ್ರವಾಹವನ್ನು ತೋರಿಸುವ ಮತ್ತು ಆಂತರಿಕ ರಕ್ತನಾಳಗಳಿಲ್ಲದ ಡಾಪ್ಲರ್ ಅಲ್ಟ್ರಾಸೌಂಡ್.',
+      },
+      {
+        'label': 'ಚೀಲ ಕರಗುವಿಕೆ',
+        'description':
+            '೬ ವಾರಗಳ ನಂತರ ಬಹುತೇಕ ಸಂಪೂರ್ಣ ಕರಗುವಿಕೆಯನ್ನು ತೋರಿಸುವ ಅನುಸರಣಾ ಅಲ್ಟ್ರಾಸೌಂಡ್.',
+      },
+      {
+        'label': 'ಅಂಗರಚನಾ ಚಿತ್ರಣ',
+        'description':
+            'ಆಂತರಿಕ ರಕ್ತ ಸಂಗ್ರಹದೊಂದಿಗೆ ಅಂಡಾಶಯದ ಒಳಗಿನ ರಕ್ತಸ್ರಾವದ ಚೀಲವನ್ನು ತೋರಿಸುವ ರೇಖಾಚಿತ್ರ.',
+      },
+    ],
+  };
+
+  List<Map<String, String>> get _sections =>
+      _language == 'kn' ? _sectionsKn : _sectionsEn;
+
+  List<Map<String, String>> get _images =>
+      _imagesByLang[_language] ?? _imagesByLang['en']!;
+
+  String _label(String key) => _labels[_language]?[key] ?? _labels['en']![key]!;
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Hemorrhagic Ovarian Cyst'),
+        title: Text(_label('appBar')),
         backgroundColor: _themeColor.withValues(alpha: 0.15),
         foregroundColor: _themeColor,
+        actions: [
+          _buildLanguageToggle(),
+          const SizedBox(width: 8),
+        ],
       ),
       body: SingleChildScrollView(
         child: Center(
@@ -111,6 +251,49 @@ class HemorrhagicCystScreen extends StatelessWidget {
                 const SizedBox(height: 24),
               ],
             ),
+          ),
+        ),
+      ),
+    );
+  }
+
+  Widget _buildLanguageToggle() {
+    return Container(
+      decoration: BoxDecoration(
+        color: _themeColor.withValues(alpha: 0.08),
+        borderRadius: BorderRadius.circular(20),
+      ),
+      child: Row(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          _buildLangChip('en', 'English'),
+          _buildLangChip('kn', 'ಕನ್ನಡ'),
+        ],
+      ),
+    );
+  }
+
+  Widget _buildLangChip(String code, String label) {
+    final isSelected = _language == code;
+    return GestureDetector(
+      onTap: () {
+        if (_language != code) {
+          setState(() => _language = code);
+        }
+      },
+      child: AnimatedContainer(
+        duration: const Duration(milliseconds: 200),
+        padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
+        decoration: BoxDecoration(
+          color: isSelected ? _themeColor : Colors.transparent,
+          borderRadius: BorderRadius.circular(20),
+        ),
+        child: Text(
+          label,
+          style: TextStyle(
+            color: isSelected ? Colors.white : _themeColor,
+            fontWeight: isSelected ? FontWeight.w600 : FontWeight.w500,
+            fontSize: 13,
           ),
         ),
       ),
@@ -142,7 +325,7 @@ class HemorrhagicCystScreen extends StatelessWidget {
                       ),
                       const SizedBox(height: 12),
                       Text(
-                        'Video Coming Soon',
+                        _label('videoTitle'),
                         style: TextStyle(
                           color: Colors.white.withValues(alpha: 0.9),
                           fontSize: 16,
@@ -151,7 +334,7 @@ class HemorrhagicCystScreen extends StatelessWidget {
                       ),
                       const SizedBox(height: 4),
                       Text(
-                        'Hemorrhagic Ovarian Cyst — Patient Education',
+                        _label('videoSubtitle'),
                         style: TextStyle(
                           color: Colors.white.withValues(alpha: 0.6),
                           fontSize: 13,
@@ -170,7 +353,7 @@ class HemorrhagicCystScreen extends StatelessWidget {
                   const SizedBox(width: 8),
                   Expanded(
                     child: Text(
-                      'Watch: Understanding Hemorrhagic Ovarian Cysts',
+                      _label('videoCaption'),
                       style: TextStyle(
                         fontWeight: FontWeight.w600,
                         fontSize: 14,
@@ -196,7 +379,7 @@ class HemorrhagicCystScreen extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.only(bottom: 8, left: 4),
             child: Text(
-              'About This Condition',
+              _label('sectionHeader'),
               style: Theme.of(context).textTheme.titleLarge?.copyWith(
                     fontWeight: FontWeight.bold,
                     color: _themeColor,
@@ -261,7 +444,7 @@ class HemorrhagicCystScreen extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.only(bottom: 12, left: 4),
             child: Text(
-              'Ultrasound & Illustrations',
+              _label('imageHeader'),
               style: Theme.of(context).textTheme.titleLarge?.copyWith(
                     fontWeight: FontWeight.bold,
                     color: _themeColor,
@@ -387,7 +570,7 @@ class HemorrhagicCystScreen extends StatelessWidget {
               const SizedBox(width: 12),
               Expanded(
                 child: Text(
-                  'This content is for educational purposes only and does not replace professional medical advice. Always consult your doctor for diagnosis and treatment.',
+                  _label('disclaimer'),
                   style: TextStyle(
                     color: Colors.amber[900],
                     fontSize: 13,
