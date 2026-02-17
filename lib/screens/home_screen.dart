@@ -11,10 +11,6 @@ class HomeScreen extends StatelessWidget {
           image: DecorationImage(
             image: AssetImage('assets/images/patil_hospital/patil_hospital_image.jpg'),
             fit: BoxFit.cover,
-            colorFilter: ColorFilter.mode(
-              Color(0x99004D40),
-              BlendMode.darken,
-            ),
           ),
         ),
         child: SafeArea(
