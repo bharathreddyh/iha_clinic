@@ -50,7 +50,7 @@ class HomeScreen extends StatelessWidget {
                     ),
                     const SizedBox(height: 4),
                     Text(
-                      'Medleri Rd, Mruthyunjaya Nagar, Ranebennur',
+                      'Ranebennur',
                       style: TextStyle(
                         fontSize: 12,
                         color: Colors.white.withValues(alpha: 0.7),
