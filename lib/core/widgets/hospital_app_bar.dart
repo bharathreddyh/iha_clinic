@@ -1,43 +1,40 @@
 import 'package:flutter/material.dart';
 
-/// Creates an AppBar with a clickable hospital name that navigates home.
+/// Creates an AppBar with a clickable hospital name centered in a rectangle.
 AppBar hospitalAppBar(
   BuildContext context, {
-  required String title,
+  String? title,
   Color? backgroundColor,
   Color? foregroundColor,
   List<Widget>? actions,
   bool automaticallyImplyLeading = true,
 }) {
   return AppBar(
-    title: Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        GestureDetector(
-          onTap: () => Navigator.pushNamedAndRemoveUntil(
-            context,
-            '/',
-            (route) => false,
+    centerTitle: true,
+    title: GestureDetector(
+      onTap: () => Navigator.pushNamedAndRemoveUntil(
+        context,
+        '/',
+        (route) => false,
+      ),
+      child: Container(
+        padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+        decoration: BoxDecoration(
+          border: Border.all(
+            color: const Color(0xFF0D47A1),
+            width: 1.5,
           ),
-          child: const Text(
-            "Patil's Multispeciality Hospital",
-            style: TextStyle(
-              fontSize: 12,
-              fontWeight: FontWeight.w600,
-              color: Color(0xFF0D47A1),
-            ),
-          ),
+          borderRadius: BorderRadius.circular(8),
         ),
-        const SizedBox(height: 2),
-        Text(
-          title,
+        child: const Text(
+          "Patil's Multispeciality Hospital",
           style: TextStyle(
-            fontSize: 18,
-            fontWeight: FontWeight.bold,
-            color: foregroundColor,
+            fontSize: 15,
+            fontWeight: FontWeight.w600,
+            color: Color(0xFF0D47A1),
           ),
         ),
-      ],
+      ),
     ),
     backgroundColor: backgroundColor,
     foregroundColor: foregroundColor,
