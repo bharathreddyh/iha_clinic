@@ -208,12 +208,6 @@ class _HemorrhagicCystScreenState extends State<HemorrhagicCystScreen> {
             'Doppler ultrasound showing peripheral blood flow around the cyst with no internal vascularity.',
       },
       {
-        'asset': 'assets/images/hemorrhagic_cyst/resolution.jpg',
-        'label': 'Cyst Resolution',
-        'description':
-            'Follow-up ultrasound showing near-complete resolution after 6 weeks.',
-      },
-      {
         'asset': 'assets/images/hemorrhagic_cyst/illustration.jpg',
         'label': 'Anatomical Illustration',
         'description':
@@ -232,12 +226,6 @@ class _HemorrhagicCystScreenState extends State<HemorrhagicCystScreen> {
         'label': 'ಡಾಪ್ಲರ್ ಚಿತ್ರಣ',
         'description':
             'ಚೀಲದ ಸುತ್ತ ಬಾಹ್ಯ ರಕ್ತ ಪ್ರವಾಹವನ್ನು ತೋರಿಸುವ ಮತ್ತು ಆಂತರಿಕ ರಕ್ತನಾಳಗಳಿಲ್ಲದ ಡಾಪ್ಲರ್ ಅಲ್ಟ್ರಾಸೌಂಡ್.',
-      },
-      {
-        'asset': 'assets/images/hemorrhagic_cyst/resolution.jpg',
-        'label': 'ಚೀಲ ಕರಗುವಿಕೆ',
-        'description':
-            '೬ ವಾರಗಳ ನಂತರ ಬಹುತೇಕ ಸಂಪೂರ್ಣ ಕರಗುವಿಕೆಯನ್ನು ತೋರಿಸುವ ಅನುಸರಣಾ ಅಲ್ಟ್ರಾಸೌಂಡ್.',
       },
       {
         'asset': 'assets/images/hemorrhagic_cyst/illustration.jpg',
