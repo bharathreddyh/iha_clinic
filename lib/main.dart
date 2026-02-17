@@ -5,6 +5,7 @@ import 'core/config/app_config.dart';
 import 'apps/reception_app/screens/mobile_entry_screen.dart';
 import 'apps/patient_app/screens/landing_screen.dart';
 import 'apps/patient_app/screens/modules_list_screen.dart';
+import 'apps/patient_app/screens/hemorrhagic_cyst_screen.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -33,6 +34,13 @@ class PatientEducationApp extends StatelessWidget {
           final token = uri.pathSegments[1];
           return MaterialPageRoute(
             builder: (_) => ModulesListScreen(token: token),
+          );
+        }
+
+        // Sample module: Hemorrhagic Ovarian Cyst
+        if (uri.path == '/hemorrhagic-cyst') {
+          return MaterialPageRoute(
+            builder: (_) => const HemorrhagicCystScreen(),
           );
         }
 
