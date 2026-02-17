@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../core/widgets/hospital_app_bar.dart';
 
 class EducationModulesScreen extends StatelessWidget {
   const EducationModulesScreen({super.key});
@@ -6,8 +7,9 @@ class EducationModulesScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Education Modules'),
+      appBar: hospitalAppBar(
+        context,
+        title: 'Education Modules',
         backgroundColor: const Color(0xFFAD1457).withValues(alpha: 0.15),
         foregroundColor: const Color(0xFFAD1457),
       ),

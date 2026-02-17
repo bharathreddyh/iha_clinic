@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import '../../../core/models/module.dart';
+import '../../../core/widgets/hospital_app_bar.dart';
 
 class ModuleDetailScreen extends StatelessWidget {
   final Module module;
@@ -34,8 +35,9 @@ class ModuleDetailScreen extends StatelessWidget {
     final sections = _parseSections();
 
     return Scaffold(
-      appBar: AppBar(
-        title: Text(module.name),
+      appBar: hospitalAppBar(
+        context,
+        title: module.name,
         backgroundColor: color.withValues(alpha: 0.15),
         foregroundColor: color,
       ),

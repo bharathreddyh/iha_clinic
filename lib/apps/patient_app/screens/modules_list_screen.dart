@@ -3,6 +3,7 @@ import '../../../core/models/module.dart';
 import '../../../core/models/registration.dart';
 import '../../../core/services/database_service.dart';
 import '../../../core/config/app_config.dart';
+import '../../../core/widgets/hospital_app_bar.dart';
 import 'module_detail_screen.dart';
 
 class ModulesListScreen extends StatefulWidget {
@@ -90,8 +91,9 @@ class _ModulesListScreenState extends State<ModulesListScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text(appConfig.clinicName),
+      appBar: hospitalAppBar(
+        context,
+        title: appConfig.clinicName,
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
         automaticallyImplyLeading: false,
       ),

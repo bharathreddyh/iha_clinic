@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import '../../../core/widgets/hospital_app_bar.dart';
 import 'module_selection_screen.dart';
 
 class MobileEntryScreen extends StatefulWidget {
@@ -34,8 +35,9 @@ class _MobileEntryScreenState extends State<MobileEntryScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Patient Registration'),
+      appBar: hospitalAppBar(
+        context,
+        title: 'Patient Registration',
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
       ),
       body: Center(
