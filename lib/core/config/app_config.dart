@@ -16,7 +16,7 @@ class AppConfig {
   factory AppConfig.production() {
     return AppConfig(
       baseUrl: 'https://your-domain.com',
-      clinicName: 'Your Clinic Name',
+      clinicName: "Patil's Multispeciality Hospital",
       twilioAccountSid: 'YOUR_TWILIO_SID',
       twilioAuthToken: 'YOUR_TWILIO_TOKEN',
       twilioPhoneNumber: '+91XXXXXXXXXX',

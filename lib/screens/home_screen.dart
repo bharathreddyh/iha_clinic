@@ -30,20 +30,31 @@ class HomeScreen extends StatelessWidget {
                     ),
                     const SizedBox(height: 16),
                     const Text(
-                      'FetalPedia',
+                      "Patil's Multispeciality\nHospital",
                       style: TextStyle(
-                        fontSize: 36,
+                        fontSize: 28,
                         fontWeight: FontWeight.bold,
                         color: Colors.white,
                         letterSpacing: 1.2,
                       ),
+                      textAlign: TextAlign.center,
                     ),
                     const SizedBox(height: 8),
                     Text(
-                      'Patient Education & Clinic Management',
+                      'A Tradition of Trust, A Future of Care',
                       style: TextStyle(
-                        fontSize: 16,
+                        fontSize: 14,
                         color: Colors.white.withValues(alpha: 0.8),
+                        fontStyle: FontStyle.italic,
+                      ),
+                      textAlign: TextAlign.center,
+                    ),
+                    const SizedBox(height: 4),
+                    Text(
+                      'Medleri Rd, Mruthyunjaya Nagar, Ranebennur',
+                      style: TextStyle(
+                        fontSize: 12,
+                        color: Colors.white.withValues(alpha: 0.7),
                       ),
                       textAlign: TextAlign.center,
                     ),
