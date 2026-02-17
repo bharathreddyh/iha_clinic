@@ -1,3 +1,6 @@
+import 'dart:html' as html;
+import 'dart:ui_web' as ui_web;
+
 import 'package:flutter/material.dart';
 
 class HemorrhagicCystScreen extends StatefulWidget {
@@ -9,8 +12,32 @@ class HemorrhagicCystScreen extends StatefulWidget {
 
 class _HemorrhagicCystScreenState extends State<HemorrhagicCystScreen> {
   static const Color _themeColor = Color(0xFFAD1457);
+  static const String _youtubeVideoId = '85V0ooc8Mfs';
+  static const String _viewType = 'youtube-player-hemorrhagic';
+  static bool _viewFactoryRegistered = false;
 
   String _language = 'en'; // 'en' or 'kn'
+
+  @override
+  void initState() {
+    super.initState();
+    if (!_viewFactoryRegistered) {
+      ui_web.platformViewRegistry.registerViewFactory(
+        _viewType,
+        (int viewId) {
+          return html.IFrameElement()
+            ..src = 'https://www.youtube.com/embed/$_youtubeVideoId'
+            ..style.border = 'none'
+            ..style.width = '100%'
+            ..style.height = '100%'
+            ..allow =
+                'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
+            ..allowFullscreen = true;
+        },
+      );
+      _viewFactoryRegistered = true;
+    }
+  }
 
   // ---------- English content ----------
   static const List<Map<String, String>> _sectionsEn = [
@@ -148,8 +175,6 @@ class _HemorrhagicCystScreenState extends State<HemorrhagicCystScreen> {
   static const Map<String, Map<String, String>> _labels = {
     'en': {
       'appBar': 'Hemorrhagic Ovarian Cyst',
-      'videoTitle': 'Video Coming Soon',
-      'videoSubtitle': 'Hemorrhagic Ovarian Cyst — Patient Education',
       'videoCaption': 'Watch: Understanding Hemorrhagic Ovarian Cysts',
       'sectionHeader': 'About This Condition',
       'imageHeader': 'Ultrasound & Illustrations',
@@ -158,8 +183,6 @@ class _HemorrhagicCystScreenState extends State<HemorrhagicCystScreen> {
     },
     'kn': {
       'appBar': 'ರಕ್ತಸ್ರಾವದ ಅಂಡಾಶಯದ ಚೀಲ',
-      'videoTitle': 'ವೀಡಿಯೊ ಶೀಘ್ರದಲ್ಲೇ ಬರಲಿದೆ',
-      'videoSubtitle': 'ರಕ್ತಸ್ರಾವದ ಅಂಡಾಶಯದ ಚೀಲ — ರೋಗಿ ಶಿಕ್ಷಣ',
       'videoCaption':
           'ನೋಡಿ: ರಕ್ತಸ್ರಾವದ ಅಂಡಾಶಯದ ಚೀಲಗಳನ್ನು ಅರ್ಥಮಾಡಿಕೊಳ್ಳುವುದು',
       'sectionHeader': 'ಈ ಸ್ಥಿತಿಯ ಬಗ್ಗೆ',
@@ -310,40 +333,9 @@ class _HemorrhagicCystScreenState extends State<HemorrhagicCystScreen> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
-            AspectRatio(
+            const AspectRatio(
               aspectRatio: 16 / 9,
-              child: Container(
-                color: Colors.grey[900],
-                child: Center(
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Icon(
-                        Icons.play_circle_outline,
-                        size: 64,
-                        color: Colors.white.withValues(alpha: 0.8),
-                      ),
-                      const SizedBox(height: 12),
-                      Text(
-                        _label('videoTitle'),
-                        style: TextStyle(
-                          color: Colors.white.withValues(alpha: 0.9),
-                          fontSize: 16,
-                          fontWeight: FontWeight.w500,
-                        ),
-                      ),
-                      const SizedBox(height: 4),
-                      Text(
-                        _label('videoSubtitle'),
-                        style: TextStyle(
-                          color: Colors.white.withValues(alpha: 0.6),
-                          fontSize: 13,
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-              ),
+              child: HtmlElementView(viewType: _viewType),
             ),
             Padding(
               padding: const EdgeInsets.all(12),
