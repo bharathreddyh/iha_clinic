@@ -35,6 +35,7 @@ class PatientEducationApp extends StatelessWidget {
         if (uri.pathSegments.length == 2 && uri.pathSegments[0] == 'p') {
           final token = uri.pathSegments[1];
           return MaterialPageRoute(
+            settings: settings,
             builder: (_) => ModulesListScreen(token: token),
           );
         }
@@ -42,6 +43,7 @@ class PatientEducationApp extends StatelessWidget {
         // Clinic: Patient registration
         if (uri.path == '/clinic') {
           return MaterialPageRoute(
+            settings: settings,
             builder: (_) => const MobileEntryScreen(),
           );
         }
@@ -49,6 +51,7 @@ class PatientEducationApp extends StatelessWidget {
         // Education modules listing
         if (uri.path == '/education') {
           return MaterialPageRoute(
+            settings: settings,
             builder: (_) => const EducationModulesScreen(),
           );
         }
@@ -56,6 +59,7 @@ class PatientEducationApp extends StatelessWidget {
         // Sample module: Hemorrhagic Ovarian Cyst
         if (uri.path == '/hemorrhagic-cyst') {
           return MaterialPageRoute(
+            settings: settings,
             builder: (_) => const HemorrhagicCystScreen(),
           );
         }
@@ -63,12 +67,14 @@ class PatientEducationApp extends StatelessWidget {
         // Patient landing (lost SMS fallback)
         if (uri.path == '/patient') {
           return MaterialPageRoute(
+            settings: settings,
             builder: (_) => const LandingScreen(),
           );
         }
 
         // Default: Home page with Clinics & Education links
         return MaterialPageRoute(
+          settings: settings,
           builder: (_) => const HomeScreen(),
         );
       },
