@@ -196,21 +196,25 @@ class _HemorrhagicCystScreenState extends State<HemorrhagicCystScreen> {
   static const Map<String, List<Map<String, String>>> _imagesByLang = {
     'en': [
       {
+        'asset': 'assets/images/hemorrhagic_cyst/ultrasound.jpg',
         'label': 'Ultrasound — Typical appearance',
         'description':
             'Characteristic "cobweb" pattern of a hemorrhagic cyst on transvaginal ultrasound.',
       },
       {
+        'asset': 'assets/images/hemorrhagic_cyst/doppler.jpg',
         'label': 'Doppler Imaging',
         'description':
             'Doppler ultrasound showing peripheral blood flow around the cyst with no internal vascularity.',
       },
       {
+        'asset': 'assets/images/hemorrhagic_cyst/resolution.jpg',
         'label': 'Cyst Resolution',
         'description':
             'Follow-up ultrasound showing near-complete resolution after 6 weeks.',
       },
       {
+        'asset': 'assets/images/hemorrhagic_cyst/illustration.jpg',
         'label': 'Anatomical Illustration',
         'description':
             'Diagram showing a hemorrhagic cyst within the ovary with internal blood collection.',
@@ -218,21 +222,25 @@ class _HemorrhagicCystScreenState extends State<HemorrhagicCystScreen> {
     ],
     'kn': [
       {
+        'asset': 'assets/images/hemorrhagic_cyst/ultrasound.jpg',
         'label': 'ಅಲ್ಟ್ರಾಸೌಂಡ್ — ಸಾಮಾನ್ಯ ಚಿತ್ರಣ',
         'description':
             'ಟ್ರಾನ್ಸ್‌ವ್ಯಾಜಿನಲ್ ಅಲ್ಟ್ರಾಸೌಂಡ್‌ನಲ್ಲಿ ರಕ್ತಸ್ರಾವದ ಚೀಲದ ವಿಶಿಷ್ಟ "ಜೇಡರ ಬಲೆ" ಮಾದರಿ.',
       },
       {
+        'asset': 'assets/images/hemorrhagic_cyst/doppler.jpg',
         'label': 'ಡಾಪ್ಲರ್ ಚಿತ್ರಣ',
         'description':
             'ಚೀಲದ ಸುತ್ತ ಬಾಹ್ಯ ರಕ್ತ ಪ್ರವಾಹವನ್ನು ತೋರಿಸುವ ಮತ್ತು ಆಂತರಿಕ ರಕ್ತನಾಳಗಳಿಲ್ಲದ ಡಾಪ್ಲರ್ ಅಲ್ಟ್ರಾಸೌಂಡ್.',
       },
       {
+        'asset': 'assets/images/hemorrhagic_cyst/resolution.jpg',
         'label': 'ಚೀಲ ಕರಗುವಿಕೆ',
         'description':
             '೬ ವಾರಗಳ ನಂತರ ಬಹುತೇಕ ಸಂಪೂರ್ಣ ಕರಗುವಿಕೆಯನ್ನು ತೋರಿಸುವ ಅನುಸರಣಾ ಅಲ್ಟ್ರಾಸೌಂಡ್.',
       },
       {
+        'asset': 'assets/images/hemorrhagic_cyst/illustration.jpg',
         'label': 'ಅಂಗರಚನಾ ಚಿತ್ರಣ',
         'description':
             'ಆಂತರಿಕ ರಕ್ತ ಸಂಗ್ರಹದೊಂದಿಗೆ ಅಂಡಾಶಯದ ಒಳಗಿನ ರಕ್ತಸ್ರಾವದ ಚೀಲವನ್ನು ತೋರಿಸುವ ರೇಖಾಚಿತ್ರ.',
@@ -492,30 +500,36 @@ class _HemorrhagicCystScreenState extends State<HemorrhagicCystScreen> {
         children: [
           AspectRatio(
             aspectRatio: 4 / 3,
-            child: Container(
-              color: Colors.grey[200],
-              child: Center(
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Icon(
-                      Icons.image_outlined,
-                      size: 48,
-                      color: Colors.grey[400],
+            child: Image.asset(
+              img['asset']!,
+              fit: BoxFit.cover,
+              errorBuilder: (context, error, stackTrace) {
+                return Container(
+                  color: Colors.grey[200],
+                  child: Center(
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Icon(
+                          Icons.image_outlined,
+                          size: 48,
+                          color: Colors.grey[400],
+                        ),
+                        const SizedBox(height: 8),
+                        Text(
+                          img['label']!,
+                          style: TextStyle(
+                            color: Colors.grey[500],
+                            fontSize: 13,
+                            fontWeight: FontWeight.w500,
+                          ),
+                          textAlign: TextAlign.center,
+                        ),
+                      ],
                     ),
-                    const SizedBox(height: 8),
-                    Text(
-                      img['label']!,
-                      style: TextStyle(
-                        color: Colors.grey[500],
-                        fontSize: 13,
-                        fontWeight: FontWeight.w500,
-                      ),
-                      textAlign: TextAlign.center,
-                    ),
-                  ],
-                ),
-              ),
+                  ),
+                );
+              },
             ),
           ),
           Padding(
