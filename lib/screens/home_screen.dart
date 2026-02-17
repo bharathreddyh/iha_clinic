@@ -8,10 +8,13 @@ class HomeScreen extends StatelessWidget {
     return Scaffold(
       body: Container(
         decoration: const BoxDecoration(
-          gradient: LinearGradient(
-            begin: Alignment.topCenter,
-            end: Alignment.bottomCenter,
-            colors: [Color(0xFF00695C), Color(0xFF004D40)],
+          image: DecorationImage(
+            image: AssetImage('assets/images/patil_hospital/patil_hospital_image.jpg'),
+            fit: BoxFit.cover,
+            colorFilter: ColorFilter.mode(
+              Color(0x99004D40),
+              BlendMode.darken,
+            ),
           ),
         ),
         child: SafeArea(
