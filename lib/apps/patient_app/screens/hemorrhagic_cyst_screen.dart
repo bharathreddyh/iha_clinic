@@ -2,6 +2,7 @@ import 'dart:html' as html;
 import 'dart:ui_web' as ui_web;
 
 import 'package:flutter/material.dart';
+import '../../../core/widgets/hospital_app_bar.dart';
 
 class HemorrhagicCystScreen extends StatefulWidget {
   const HemorrhagicCystScreen({super.key});
@@ -253,8 +254,9 @@ class _HemorrhagicCystScreenState extends State<HemorrhagicCystScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text(_label('appBar')),
+      appBar: hospitalAppBar(
+        context,
+        title: _label('appBar'),
         backgroundColor: _themeColor.withValues(alpha: 0.15),
         foregroundColor: _themeColor,
         actions: [

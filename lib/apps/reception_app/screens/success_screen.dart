@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import '../../../core/config/app_config.dart';
+import '../../../core/widgets/hospital_app_bar.dart';
 
 class SuccessScreen extends StatelessWidget {
   final String mobile;
@@ -19,8 +20,9 @@ class SuccessScreen extends StatelessWidget {
     final accessLink = '${appConfig.baseUrl}/p/$token';
 
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Registration Complete'),
+      appBar: hospitalAppBar(
+        context,
+        title: 'Registration Complete',
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
         automaticallyImplyLeading: false,
       ),

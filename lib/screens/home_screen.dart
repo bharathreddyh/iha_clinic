@@ -25,7 +25,7 @@ class HomeScreen extends StatelessWidget {
                     Icon(
                       Icons.local_hospital,
                       size: 72,
-                      color: Colors.white.withValues(alpha: 0.9),
+                      color: const Color(0xFF0D47A1),
                     ),
                     const SizedBox(height: 16),
                     const Text(
@@ -33,7 +33,7 @@ class HomeScreen extends StatelessWidget {
                       style: TextStyle(
                         fontSize: 28,
                         fontWeight: FontWeight.bold,
-                        color: Colors.white,
+                        color: Color(0xFF0D47A1),
                         letterSpacing: 1.2,
                       ),
                       textAlign: TextAlign.center,
@@ -43,17 +43,17 @@ class HomeScreen extends StatelessWidget {
                       'A Tradition of Trust, A Future of Care',
                       style: TextStyle(
                         fontSize: 14,
-                        color: Colors.white.withValues(alpha: 0.8),
+                        color: Color(0xFF1565C0),
                         fontStyle: FontStyle.italic,
                       ),
                       textAlign: TextAlign.center,
                     ),
                     const SizedBox(height: 4),
                     Text(
-                      'Medleri Rd, Mruthyunjaya Nagar, Ranebennur',
+                      'Ranebennur',
                       style: TextStyle(
                         fontSize: 12,
-                        color: Colors.white.withValues(alpha: 0.7),
+                        color: Color(0xFF1565C0),
                       ),
                       textAlign: TextAlign.center,
                     ),

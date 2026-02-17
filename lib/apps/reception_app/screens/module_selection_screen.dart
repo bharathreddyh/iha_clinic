@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import '../../../core/models/module.dart';
 import '../../../core/services/database_service.dart';
+import '../../../core/widgets/hospital_app_bar.dart';
 import 'confirmation_screen.dart';
 
 class ModuleSelectionScreen extends StatefulWidget {
@@ -76,8 +77,9 @@ class _ModuleSelectionScreenState extends State<ModuleSelectionScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Select Modules'),
+      appBar: hospitalAppBar(
+        context,
+        title: 'Select Modules',
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
       ),
       body: _isLoading

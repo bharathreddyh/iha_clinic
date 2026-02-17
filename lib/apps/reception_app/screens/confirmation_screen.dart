@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import '../../../core/models/module.dart';
 import '../../../core/services/database_service.dart';
 import '../../../core/services/sms_service.dart';
+import '../../../core/widgets/hospital_app_bar.dart';
 import 'success_screen.dart';
 
 class ConfirmationScreen extends StatefulWidget {
@@ -65,8 +66,9 @@ class _ConfirmationScreenState extends State<ConfirmationScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Confirm & Send'),
+      appBar: hospitalAppBar(
+        context,
+        title: 'Confirm & Send',
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
       ),
       body: SingleChildScrollView(
