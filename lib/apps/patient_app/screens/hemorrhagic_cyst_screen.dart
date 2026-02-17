@@ -177,7 +177,6 @@ class _HemorrhagicCystScreenState extends State<HemorrhagicCystScreen> {
       'appBar': 'Hemorrhagic Ovarian Cyst',
       'videoCaption': 'Watch: Understanding Hemorrhagic Ovarian Cysts',
       'sectionHeader': 'About This Condition',
-      'imageHeader': 'Ultrasound & Illustrations',
       'disclaimer':
           'This content is for educational purposes only and does not replace professional medical advice. Always consult your doctor for diagnosis and treatment.',
     },
@@ -186,61 +185,68 @@ class _HemorrhagicCystScreenState extends State<HemorrhagicCystScreen> {
       'videoCaption':
           'ನೋಡಿ: ರಕ್ತಸ್ರಾವದ ಅಂಡಾಶಯದ ಚೀಲಗಳನ್ನು ಅರ್ಥಮಾಡಿಕೊಳ್ಳುವುದು',
       'sectionHeader': 'ಈ ಸ್ಥಿತಿಯ ಬಗ್ಗೆ',
-      'imageHeader': 'ಅಲ್ಟ್ರಾಸೌಂಡ್ ಮತ್ತು ಚಿತ್ರಣಗಳು',
       'disclaimer':
           'ಈ ಮಾಹಿತಿಯು ಕೇವಲ ಶೈಕ್ಷಣಿಕ ಉದ್ದೇಶಗಳಿಗಾಗಿ ಮಾತ್ರ ಮತ್ತು ವೃತ್ತಿಪರ ವೈದ್ಯಕೀಯ ಸಲಹೆಯನ್ನು ಬದಲಿಸುವುದಿಲ್ಲ. ರೋಗನಿರ್ಣಯ ಮತ್ತು ಚಿಕಿತ್ಸೆಗಾಗಿ ಯಾವಾಗಲೂ ನಿಮ್ಮ ವೈದ್ಯರನ್ನು ಸಂಪರ್ಕಿಸಿ.',
     },
   };
 
   // ---------- Image labels by language ----------
-  static const Map<String, List<Map<String, String>>> _imagesByLang = {
+  // ---------- Diagnosis images (USG & Doppler) by language ----------
+  static const Map<String, List<Map<String, String>>> _diagnosisImagesByLang = {
     'en': [
       {
-        'asset': 'assets/images/hemorrhagic_cyst/ovary_hemorrhagic_usg.jpg',
+        'asset': 'assets/images/ovary/hemorrhagic/ovary_hemorrhagic_usg.jpg',
         'label': 'Ultrasound — Typical appearance',
         'description':
             'Characteristic "cobweb" pattern of a hemorrhagic cyst on transvaginal ultrasound.',
       },
       {
-        'asset': 'assets/images/hemorrhagic_cyst/ovary_hemorrhagic_doppler.jpg',
+        'asset': 'assets/images/ovary/hemorrhagic/ovary_hemorrhagic_doppler.jpg',
         'label': 'Doppler Imaging',
         'description':
             'Doppler ultrasound showing peripheral blood flow around the cyst with no internal vascularity.',
       },
-      {
-        'asset': 'assets/images/hemorrhagic_cyst/ovary_hemorrhagic_illus.jpg',
-        'label': 'Anatomical Illustration',
-        'description':
-            'Diagram showing a hemorrhagic cyst within the ovary with internal blood collection.',
-      },
     ],
     'kn': [
       {
-        'asset': 'assets/images/hemorrhagic_cyst/ovary_hemorrhagic_usg.jpg',
+        'asset': 'assets/images/ovary/hemorrhagic/ovary_hemorrhagic_usg.jpg',
         'label': 'ಅಲ್ಟ್ರಾಸೌಂಡ್ — ಸಾಮಾನ್ಯ ಚಿತ್ರಣ',
         'description':
             'ಟ್ರಾನ್ಸ್‌ವ್ಯಾಜಿನಲ್ ಅಲ್ಟ್ರಾಸೌಂಡ್‌ನಲ್ಲಿ ರಕ್ತಸ್ರಾವದ ಚೀಲದ ವಿಶಿಷ್ಟ "ಜೇಡರ ಬಲೆ" ಮಾದರಿ.',
       },
       {
-        'asset': 'assets/images/hemorrhagic_cyst/ovary_hemorrhagic_doppler.jpg',
+        'asset': 'assets/images/ovary/hemorrhagic/ovary_hemorrhagic_doppler.jpg',
         'label': 'ಡಾಪ್ಲರ್ ಚಿತ್ರಣ',
         'description':
             'ಚೀಲದ ಸುತ್ತ ಬಾಹ್ಯ ರಕ್ತ ಪ್ರವಾಹವನ್ನು ತೋರಿಸುವ ಮತ್ತು ಆಂತರಿಕ ರಕ್ತನಾಳಗಳಿಲ್ಲದ ಡಾಪ್ಲರ್ ಅಲ್ಟ್ರಾಸೌಂಡ್.',
       },
-      {
-        'asset': 'assets/images/hemorrhagic_cyst/ovary_hemorrhagic_illus.jpg',
-        'label': 'ಅಂಗರಚನಾ ಚಿತ್ರಣ',
-        'description':
-            'ಆಂತರಿಕ ರಕ್ತ ಸಂಗ್ರಹದೊಂದಿಗೆ ಅಂಡಾಶಯದ ಒಳಗಿನ ರಕ್ತಸ್ರಾವದ ಚೀಲವನ್ನು ತೋರಿಸುವ ರೇಖಾಚಿತ್ರ.',
-      },
     ],
+  };
+
+  // ---------- Illustration image (under "What is" section) by language ----------
+  static const Map<String, Map<String, String>> _illustrationByLang = {
+    'en': {
+      'asset': 'assets/images/ovary/hemorrhagic/ovary_hemorrhagic_illus.jpg',
+      'label': 'Anatomical Illustration',
+      'description':
+          'Diagram showing a hemorrhagic cyst within the ovary with internal blood collection.',
+    },
+    'kn': {
+      'asset': 'assets/images/ovary/hemorrhagic/ovary_hemorrhagic_illus.jpg',
+      'label': 'ಅಂಗರಚನಾ ಚಿತ್ರಣ',
+      'description':
+          'ಆಂತರಿಕ ರಕ್ತ ಸಂಗ್ರಹದೊಂದಿಗೆ ಅಂಡಾಶಯದ ಒಳಗಿನ ರಕ್ತಸ್ರಾವದ ಚೀಲವನ್ನು ತೋರಿಸುವ ರೇಖಾಚಿತ್ರ.',
+    },
   };
 
   List<Map<String, String>> get _sections =>
       _language == 'kn' ? _sectionsKn : _sectionsEn;
 
-  List<Map<String, String>> get _images =>
-      _imagesByLang[_language] ?? _imagesByLang['en']!;
+  List<Map<String, String>> get _diagnosisImages =>
+      _diagnosisImagesByLang[_language] ?? _diagnosisImagesByLang['en']!;
+
+  Map<String, String> get _illustration =>
+      _illustrationByLang[_language] ?? _illustrationByLang['en']!;
 
   String _label(String key) => _labels[_language]?[key] ?? _labels['en']![key]!;
 
@@ -265,7 +271,6 @@ class _HemorrhagicCystScreenState extends State<HemorrhagicCystScreen> {
               children: [
                 _buildVideoSection(context),
                 _buildContentSections(context),
-                _buildImageGallery(context),
                 _buildDisclaimer(context),
                 const SizedBox(height: 24),
               ],
@@ -403,15 +408,28 @@ class _HemorrhagicCystScreenState extends State<HemorrhagicCystScreen> {
                 children: [
                   Padding(
                     padding: const EdgeInsets.fromLTRB(16, 0, 16, 16),
-                    child: Align(
-                      alignment: Alignment.centerLeft,
-                      child: Text(
-                        section['body']!,
-                        style: const TextStyle(
-                          fontSize: 15,
-                          height: 1.6,
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          section['body']!,
+                          style: const TextStyle(
+                            fontSize: 15,
+                            height: 1.6,
+                          ),
                         ),
-                      ),
+                        // Illustration under "What is" section (index 0)
+                        if (index == 0) ...[
+                          const SizedBox(height: 16),
+                          _buildImageCard(_illustration),
+                        ],
+                        // USG & Doppler under "Diagnosis" section (index 3)
+                        if (index == 3)
+                          ..._diagnosisImages.map((img) => Padding(
+                                padding: const EdgeInsets.only(top: 12),
+                                child: _buildImageCard(img),
+                              )),
+                      ],
                     ),
                   ),
                 ],
@@ -420,61 +438,6 @@ class _HemorrhagicCystScreenState extends State<HemorrhagicCystScreen> {
           }),
         ],
       ),
-    );
-  }
-
-  Widget _buildImageGallery(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Padding(
-            padding: const EdgeInsets.only(bottom: 12, left: 4),
-            child: Text(
-              _label('imageHeader'),
-              style: Theme.of(context).textTheme.titleLarge?.copyWith(
-                    fontWeight: FontWeight.bold,
-                    color: _themeColor,
-                  ),
-            ),
-          ),
-          LayoutBuilder(
-            builder: (context, constraints) {
-              final isWide = constraints.maxWidth > 450;
-              if (isWide) {
-                return _buildImageGrid();
-              } else {
-                return _buildImageList();
-              }
-            },
-          ),
-        ],
-      ),
-    );
-  }
-
-  Widget _buildImageGrid() {
-    return Wrap(
-      spacing: 12,
-      runSpacing: 12,
-      children: _images.map((img) {
-        return SizedBox(
-          width: 330,
-          child: _buildImageCard(img),
-        );
-      }).toList(),
-    );
-  }
-
-  Widget _buildImageList() {
-    return Column(
-      children: _images.map((img) {
-        return Padding(
-          padding: const EdgeInsets.only(bottom: 12),
-          child: _buildImageCard(img),
-        );
-      }).toList(),
     );
   }
 
