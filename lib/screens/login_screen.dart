@@ -259,8 +259,18 @@ class _LoginScreenState extends State<LoginScreen>
         // Logo image
         Image.asset(
           'assets/images/mainpage/logo.png',
-          width: isWide ? 280 : 220,
+          width: isWide ? 380 : 300,
           fit: BoxFit.contain,
+        ),
+        const SizedBox(height: 20),
+        Text(
+          'Transforming Clinical Care',
+          style: TextStyle(
+            fontSize: isWide ? 18 : 15,
+            color: Colors.white.withValues(alpha: 0.7),
+            fontStyle: FontStyle.italic,
+            letterSpacing: 1.5,
+          ),
         ),
       ],
     );
