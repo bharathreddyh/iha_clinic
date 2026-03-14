@@ -583,10 +583,12 @@ class _LoginScreenState extends State<LoginScreen>
             child: Container(color: const Color(0xFF0D1B2A)),
           ),
 
-          // Background image
+          // Background image (use smaller variant on mobile)
           Positioned.fill(
             child: Image.asset(
-              'assets/images/main_background.jpg',
+              isWide
+                  ? 'assets/images/main_background.jpg'
+                  : 'assets/images/main_background_mobile.jpg',
               fit: BoxFit.cover,
               width: double.infinity,
               height: double.infinity,

@@ -64,6 +64,7 @@ flutter:
   assets:
     - assets/images/ovary/hemorrhagic/
     - assets/images/main_background.jpg
+    - assets/images/main_background_mobile.jpg
     - assets/images/patil_hospital/
     - assets/images/mainpage/logo.png
 
