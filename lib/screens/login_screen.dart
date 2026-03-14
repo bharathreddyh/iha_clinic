@@ -578,11 +578,21 @@ class _LoginScreenState extends State<LoginScreen>
     return Scaffold(
       body: Stack(
         children: [
+          // Background color fallback
+          Positioned.fill(
+            child: Container(color: const Color(0xFF0D1B2A)),
+          ),
+
           // Background image
           Positioned.fill(
             child: Image.asset(
               'assets/images/main_background.jpg',
               fit: BoxFit.cover,
+              width: double.infinity,
+              height: double.infinity,
+              gaplessPlayback: true,
+              errorBuilder: (context, error, stackTrace) =>
+                  const SizedBox.shrink(),
             ),
           ),
 
