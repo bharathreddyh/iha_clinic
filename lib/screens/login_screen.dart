@@ -254,36 +254,8 @@ class _LoginScreenState extends State<LoginScreen>
   Widget _buildBrandingSide(bool isWide) {
     return Column(
       mainAxisAlignment: MainAxisAlignment.center,
-      crossAxisAlignment:
-          isWide ? CrossAxisAlignment.start : CrossAxisAlignment.center,
+      crossAxisAlignment: CrossAxisAlignment.center,
       children: [
-        // Hospital icon
-        Container(
-          width: 72,
-          height: 72,
-          decoration: BoxDecoration(
-            shape: BoxShape.circle,
-            gradient: const LinearGradient(
-              colors: [Color(0xFF4FC3F7), Color(0xFF0288D1)],
-              begin: Alignment.topLeft,
-              end: Alignment.bottomRight,
-            ),
-            boxShadow: [
-              BoxShadow(
-                color: const Color(0xFF4FC3F7).withValues(alpha: 0.4),
-                blurRadius: 20,
-                spreadRadius: 2,
-              ),
-            ],
-          ),
-          child: const Icon(
-            Icons.local_hospital_rounded,
-            color: Colors.white,
-            size: 36,
-          ),
-        ),
-        const SizedBox(height: 28),
-
         // "3D" with glow effect
         ShaderMask(
           shaderCallback: (bounds) => const LinearGradient(
@@ -330,15 +302,15 @@ class _LoginScreenState extends State<LoginScreen>
 
         // Description
         Text(
-          'Transforming how clinics deliver care,\none patient at a time.',
+          'Transforming how clinics deliver care',
           style: TextStyle(
-            fontSize: isWide ? 13 : 12,
-            color: Colors.white.withValues(alpha: 0.35),
+            fontSize: isWide ? 15 : 14,
+            color: Colors.white.withValues(alpha: 0.7),
             fontStyle: FontStyle.italic,
             letterSpacing: 0.5,
             height: 1.5,
           ),
-          textAlign: isWide ? TextAlign.left : TextAlign.center,
+          textAlign: TextAlign.center,
         ),
       ],
     );
@@ -689,8 +661,7 @@ class _LoginScreenState extends State<LoginScreen>
         // Left: Branding
         Expanded(
           flex: 5,
-          child: Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 60),
+          child: Center(
             child: _buildBrandingSide(true),
           ),
         ),
