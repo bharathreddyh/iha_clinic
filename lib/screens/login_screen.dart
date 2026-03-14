@@ -328,19 +328,6 @@ class _LoginScreenState extends State<LoginScreen>
         ),
         const SizedBox(height: 16),
 
-        // Tagline
-        Text(
-          'Intelligent Healthcare Solutions',
-          style: TextStyle(
-            fontSize: isWide ? 15 : 13,
-            color: Colors.white.withValues(alpha: 0.55),
-            fontWeight: FontWeight.w400,
-            letterSpacing: 1.5,
-          ),
-          textAlign: isWide ? TextAlign.left : TextAlign.center,
-        ),
-        const SizedBox(height: 8),
-
         // Description
         Text(
           'Transforming how clinics deliver care,\none patient at a time.',
