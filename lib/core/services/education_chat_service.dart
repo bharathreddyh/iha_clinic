@@ -30,7 +30,7 @@ class EducationChatService {
           '• ಚಿಕಿತ್ಸೆ ಹೇಗೆ?\n'
           '• ವೈದ್ಯರನ್ನು ಯಾವಾಗ ಭೇಟಿ ಮಾಡಬೇಕು?';
     }
-    return 'Hello! I\'m the Patil\'s Hospital patient education assistant. '
+    return 'Hello! I\'m the 3D Clinic patient education assistant. '
         'Ask me any questions about Hemorrhagic Ovarian Cysts.\n\n'
         'For example, you can ask:\n'
         '• What is a hemorrhagic cyst?\n'
@@ -144,7 +144,7 @@ class EducationChatService {
           '• Heavy or irregular vaginal bleeding\n\n'
           'These symptoms may indicate a ruptured cyst, ovarian torsion, or other conditions '
           'that require prompt medical evaluation.\n\n'
-          'If you are experiencing any of these symptoms right now, please visit Patil\'s Multispeciality '
+          'If you are experiencing any of these symptoms right now, please visit 3D Clinic '
           'Hospital or your nearest emergency room immediately.';
     }
 

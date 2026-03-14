@@ -27,7 +27,7 @@ AppBar hospitalAppBar(
           borderRadius: BorderRadius.circular(8),
         ),
         child: const Text(
-          "Patil's Multispeciality Hospital",
+          '3D Clinic',
           style: TextStyle(
             fontSize: 15,
             fontWeight: FontWeight.w600,
