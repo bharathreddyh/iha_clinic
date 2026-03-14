@@ -1,6 +1,7 @@
 import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});
@@ -264,12 +265,11 @@ class _LoginScreenState extends State<LoginScreen>
         ),
         const SizedBox(height: 20),
         Text(
-          'Transforming Clinical Care',
-          style: TextStyle(
-            fontSize: isWide ? 18 : 15,
+          'transforming clinical care',
+          style: GoogleFonts.pacifico(
+            fontSize: isWide ? 20 : 16,
             color: Colors.white.withValues(alpha: 0.7),
-            fontStyle: FontStyle.italic,
-            letterSpacing: 1.5,
+            letterSpacing: 1.2,
           ),
         ),
       ],
