@@ -15,7 +15,7 @@ class AppConfig {
 
   factory AppConfig.production() {
     return AppConfig(
-      baseUrl: 'https://your-domain.com',
+      baseUrl: 'https://3dclinic.app',
       clinicName: "Patil's Multispeciality Hospital",
       twilioAccountSid: 'YOUR_TWILIO_SID',
       twilioAuthToken: 'YOUR_TWILIO_TOKEN',
