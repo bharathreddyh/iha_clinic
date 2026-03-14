@@ -303,7 +303,7 @@ class _LoginScreenState extends State<LoginScreen>
           ),
           child: Column(
             mainAxisSize: MainAxisSize.min,
-            crossAxisAlignment: CrossAxisAlignment.start,
+            crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               // Welcome text
               Text(
