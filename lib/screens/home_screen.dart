@@ -30,46 +30,6 @@ class HomeScreen extends StatelessWidget {
                         Shadow(color: Colors.black54, blurRadius: 8),
                       ],
                     ),
-                    const SizedBox(height: 16),
-                    Text(
-                      "Patil's Multispeciality\nHospital",
-                      style: TextStyle(
-                        fontSize: 28,
-                        fontWeight: FontWeight.bold,
-                        color: Colors.white,
-                        letterSpacing: 1.2,
-                        shadows: const [
-                          Shadow(color: Colors.black87, blurRadius: 10, offset: Offset(1, 1)),
-                          Shadow(color: Colors.black54, blurRadius: 20),
-                        ],
-                      ),
-                      textAlign: TextAlign.center,
-                    ),
-                    const SizedBox(height: 8),
-                    Text(
-                      'A Tradition of Trust, A Future of Care',
-                      style: TextStyle(
-                        fontSize: 14,
-                        color: Colors.white,
-                        fontStyle: FontStyle.italic,
-                        shadows: const [
-                          Shadow(color: Colors.black87, blurRadius: 8, offset: Offset(1, 1)),
-                        ],
-                      ),
-                      textAlign: TextAlign.center,
-                    ),
-                    const SizedBox(height: 4),
-                    Text(
-                      'Ranebennur',
-                      style: TextStyle(
-                        fontSize: 12,
-                        color: Colors.white70,
-                        shadows: const [
-                          Shadow(color: Colors.black87, blurRadius: 8, offset: Offset(1, 1)),
-                        ],
-                      ),
-                      textAlign: TextAlign.center,
-                    ),
                     const SizedBox(height: 48),
                     _HomeTile(
                       icon: Icons.medical_services_rounded,
