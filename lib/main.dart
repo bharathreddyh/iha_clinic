@@ -3,6 +3,7 @@ import 'package:firebase_core/firebase_core.dart';
 import 'firebase_options.dart';
 import 'core/config/app_config.dart';
 import 'screens/home_screen.dart';
+import 'screens/login_screen.dart';
 import 'screens/education_modules_screen.dart';
 import 'apps/reception_app/screens/mobile_entry_screen.dart';
 import 'apps/patient_app/screens/landing_screen.dart';
@@ -64,6 +65,14 @@ class PatientEducationApp extends StatelessWidget {
           );
         }
 
+        // Home page with Clinics & Education links
+        if (uri.path == '/home') {
+          return MaterialPageRoute(
+            settings: settings,
+            builder: (_) => const HomeScreen(),
+          );
+        }
+
         // Patient landing (lost SMS fallback)
         if (uri.path == '/patient') {
           return MaterialPageRoute(
@@ -72,10 +81,10 @@ class PatientEducationApp extends StatelessWidget {
           );
         }
 
-        // Default: Home page with Clinics & Education links
+        // Default: Login screen
         return MaterialPageRoute(
           settings: settings,
-          builder: (_) => const HomeScreen(),
+          builder: (_) => const LoginScreen(),
         );
       },
     );
