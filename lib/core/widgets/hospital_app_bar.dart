@@ -17,23 +17,10 @@ AppBar hospitalAppBar(
         '/',
         (route) => false,
       ),
-      child: Container(
-        padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
-        decoration: BoxDecoration(
-          border: Border.all(
-            color: const Color(0xFF0D47A1),
-            width: 1.5,
-          ),
-          borderRadius: BorderRadius.circular(8),
-        ),
-        child: const Text(
-          '3D Clinic',
-          style: TextStyle(
-            fontSize: 15,
-            fontWeight: FontWeight.w600,
-            color: Color(0xFF0D47A1),
-          ),
-        ),
+      child: Image.asset(
+        'assets/images/mainpage/logo.png',
+        height: 40,
+        fit: BoxFit.contain,
       ),
     ),
     backgroundColor: backgroundColor,

@@ -65,6 +65,7 @@ flutter:
     - assets/images/ovary/hemorrhagic/
     - assets/images/main_background.jpg
     - assets/images/patil_hospital/
+    - assets/images/mainpage/logo.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images

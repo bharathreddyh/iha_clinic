@@ -256,61 +256,11 @@ class _LoginScreenState extends State<LoginScreen>
       mainAxisAlignment: MainAxisAlignment.center,
       crossAxisAlignment: CrossAxisAlignment.center,
       children: [
-        // "3D" with glow effect
-        ShaderMask(
-          shaderCallback: (bounds) => const LinearGradient(
-            colors: [Color(0xFF4FC3F7), Color(0xFFE1F5FE), Color(0xFF4FC3F7)],
-            stops: [0.0, 0.5, 1.0],
-          ).createShader(bounds),
-          child: Text(
-            '3D',
-            style: TextStyle(
-              fontSize: isWide ? 80 : 64,
-              fontWeight: FontWeight.w900,
-              color: Colors.white,
-              letterSpacing: 6,
-              height: 1,
-            ),
-          ),
-        ),
-
-        // "CLINIC" with wide letter spacing
-        Text(
-          'CLINIC',
-          style: TextStyle(
-            fontSize: isWide ? 44 : 36,
-            fontWeight: FontWeight.w300,
-            color: Colors.white,
-            letterSpacing: isWide ? 18 : 14,
-            height: 1.1,
-          ),
-        ),
-        const SizedBox(height: 16),
-
-        // Decorative line
-        Container(
-          width: isWide ? 80 : 60,
-          height: 3,
-          decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(2),
-            gradient: const LinearGradient(
-              colors: [Color(0xFF4FC3F7), Color(0xFF0288D1)],
-            ),
-          ),
-        ),
-        const SizedBox(height: 16),
-
-        // Description
-        Text(
-          'Transforming how clinics deliver care',
-          style: TextStyle(
-            fontSize: isWide ? 15 : 14,
-            color: Colors.white.withValues(alpha: 0.7),
-            fontStyle: FontStyle.italic,
-            letterSpacing: 0.5,
-            height: 1.5,
-          ),
-          textAlign: TextAlign.center,
+        // Logo image
+        Image.asset(
+          'assets/images/mainpage/logo.png',
+          width: isWide ? 280 : 220,
+          fit: BoxFit.contain,
         ),
       ],
     );
