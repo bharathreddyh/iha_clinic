@@ -339,6 +339,20 @@ class _LoginScreenState extends State<LoginScreen>
           ),
           textAlign: isWide ? TextAlign.left : TextAlign.center,
         ),
+        const SizedBox(height: 8),
+
+        // Description
+        Text(
+          'Transforming how clinics deliver care,\none patient at a time.',
+          style: TextStyle(
+            fontSize: isWide ? 13 : 12,
+            color: Colors.white.withValues(alpha: 0.35),
+            fontStyle: FontStyle.italic,
+            letterSpacing: 0.5,
+            height: 1.5,
+          ),
+          textAlign: isWide ? TextAlign.left : TextAlign.center,
+        ),
       ],
     );
   }
