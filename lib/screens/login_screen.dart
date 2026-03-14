@@ -326,30 +326,6 @@ class _LoginScreenState extends State<LoginScreen>
             ),
           ),
         ),
-        const SizedBox(height: 16),
-
-        // Tagline
-        Text(
-          "Patil's Multispeciality Hospital",
-          style: TextStyle(
-            fontSize: isWide ? 16 : 14,
-            color: Colors.white.withValues(alpha: 0.7),
-            fontWeight: FontWeight.w400,
-            letterSpacing: 1.5,
-          ),
-          textAlign: isWide ? TextAlign.left : TextAlign.center,
-        ),
-        const SizedBox(height: 6),
-        Text(
-          'A Tradition of Trust, A Future of Care',
-          style: TextStyle(
-            fontSize: isWide ? 13 : 12,
-            color: Colors.white.withValues(alpha: 0.45),
-            fontStyle: FontStyle.italic,
-            letterSpacing: 0.8,
-          ),
-          textAlign: isWide ? TextAlign.left : TextAlign.center,
-        ),
       ],
     );
   }
