@@ -26,7 +26,254 @@ class EducationModulesScreen extends StatelessWidget {
                   title: 'General',
                   icon: Icons.health_and_safety_rounded,
                   color: const Color(0xFF1565C0),
-                  modules: [],
+                  subSections: [
+                    // ── Hormonal Health ──
+                    _SubSection(
+                      title: 'Hormonal Health',
+                      modules: [
+                        _ModuleInfo(
+                          title: 'Menopause & Perimenopause',
+                          description: 'Understanding the menopausal transition — symptoms, hormonal changes, and management.',
+                          icon: Icons.thermostat,
+                          route: '/coming-soon',
+                        ),
+                        _ModuleInfo(
+                          title: 'Hormone Replacement Therapy (HRT)',
+                          description: 'Benefits, risks, and types of HRT for managing menopausal symptoms.',
+                          icon: Icons.medication_liquid,
+                          route: '/coming-soon',
+                        ),
+                        _ModuleInfo(
+                          title: 'PCOS & Insulin Resistance',
+                          description: 'The link between polycystic ovary syndrome and metabolic health.',
+                          icon: Icons.monitor_heart,
+                          route: '/coming-soon',
+                        ),
+                        _ModuleInfo(
+                          title: 'Thyroid Disorders in Women',
+                          description: 'Hypothyroidism and hyperthyroidism — impact on menstruation, fertility, and overall health.',
+                          icon: Icons.accessibility_new,
+                          route: '/coming-soon',
+                        ),
+                      ],
+                    ),
+                    // ── Contraception ──
+                    _SubSection(
+                      title: 'Contraception',
+                      modules: [
+                        _ModuleInfo(
+                          title: 'Oral Contraceptive Pills',
+                          description: 'Combined and progestogen-only pills — how they work, benefits, and side effects.',
+                          icon: Icons.medication,
+                          route: '/coming-soon',
+                        ),
+                        _ModuleInfo(
+                          title: 'Intrauterine Devices (IUD/IUS)',
+                          description: 'Copper IUD and hormonal IUS — insertion, effectiveness, and suitability.',
+                          icon: Icons.shield,
+                          route: '/coming-soon',
+                        ),
+                        _ModuleInfo(
+                          title: 'Injectable & Implant Contraceptives',
+                          description: 'Depot injections and subdermal implants — long-acting reversible contraception.',
+                          icon: Icons.vaccines,
+                          route: '/coming-soon',
+                        ),
+                        _ModuleInfo(
+                          title: 'Emergency Contraception',
+                          description: 'Morning-after pill and copper IUD — options, timing, and effectiveness.',
+                          icon: Icons.emergency,
+                          route: '/coming-soon',
+                        ),
+                        _ModuleInfo(
+                          title: 'Barrier Methods',
+                          description: 'Condoms, diaphragms, and cervical caps — usage and effectiveness.',
+                          icon: Icons.security,
+                          route: '/coming-soon',
+                        ),
+                        _ModuleInfo(
+                          title: 'Natural Family Planning',
+                          description: 'Fertility awareness methods — tracking ovulation and fertility windows.',
+                          icon: Icons.calendar_month,
+                          route: '/coming-soon',
+                        ),
+                      ],
+                    ),
+                    // ── Preventive Screening ──
+                    _SubSection(
+                      title: 'Preventive Screening',
+                      modules: [
+                        _ModuleInfo(
+                          title: 'Pap Smear & HPV Testing',
+                          description: 'Cervical cancer screening — when and how often to get tested.',
+                          icon: Icons.biotech,
+                          route: '/coming-soon',
+                        ),
+                        _ModuleInfo(
+                          title: 'Mammography',
+                          description: 'Breast cancer screening — age guidelines, what to expect, and follow-up.',
+                          icon: Icons.medical_information,
+                          route: '/coming-soon',
+                        ),
+                        _ModuleInfo(
+                          title: 'Bone Density (DEXA) Screening',
+                          description: 'Osteoporosis screening — who needs it and understanding results.',
+                          icon: Icons.account_tree,
+                          route: '/coming-soon',
+                        ),
+                        _ModuleInfo(
+                          title: 'HPV Vaccination',
+                          description: 'Human papillomavirus vaccine — schedule, eligibility, and prevention of cervical cancer.',
+                          icon: Icons.vaccines,
+                          route: '/coming-soon',
+                        ),
+                      ],
+                    ),
+                    // ── Nutrition & Lifestyle ──
+                    _SubSection(
+                      title: 'Nutrition & Lifestyle',
+                      modules: [
+                        _ModuleInfo(
+                          title: 'Iron Deficiency & Anaemia',
+                          description: 'Common in women — causes, symptoms, dietary sources, and supplementation.',
+                          icon: Icons.bloodtype,
+                          route: '/coming-soon',
+                        ),
+                        _ModuleInfo(
+                          title: 'Calcium & Vitamin D',
+                          description: 'Bone health essentials — dietary needs, supplementation, and preventing osteoporosis.',
+                          icon: Icons.sunny,
+                          route: '/coming-soon',
+                        ),
+                        _ModuleInfo(
+                          title: 'Folic Acid & Preconception Nutrition',
+                          description: 'Essential nutrients before and during pregnancy — neural tube defect prevention.',
+                          icon: Icons.restaurant,
+                          route: '/coming-soon',
+                        ),
+                        _ModuleInfo(
+                          title: 'Exercise & Hormonal Health',
+                          description: 'Physical activity during menstruation, pregnancy, and menopause — safe practices.',
+                          icon: Icons.fitness_center,
+                          route: '/coming-soon',
+                        ),
+                        _ModuleInfo(
+                          title: 'Weight Management & Hormones',
+                          description: 'How hormonal changes affect weight — strategies for healthy weight management.',
+                          icon: Icons.monitor_weight,
+                          route: '/coming-soon',
+                        ),
+                      ],
+                    ),
+                    // ── Mental & Emotional Health ──
+                    _SubSection(
+                      title: 'Mental & Emotional Health',
+                      modules: [
+                        _ModuleInfo(
+                          title: 'Postpartum Depression',
+                          description: 'Recognising and managing depression after childbirth — when to seek help.',
+                          icon: Icons.psychology,
+                          route: '/coming-soon',
+                        ),
+                        _ModuleInfo(
+                          title: 'Premenstrual Mood Disorders',
+                          description: 'PMS and PMDD — emotional and psychological symptoms and coping strategies.',
+                          icon: Icons.sentiment_dissatisfied,
+                          route: '/coming-soon',
+                        ),
+                        _ModuleInfo(
+                          title: 'Stress & Hormonal Imbalance',
+                          description: 'How chronic stress affects reproductive hormones and overall wellbeing.',
+                          icon: Icons.self_improvement,
+                          route: '/coming-soon',
+                        ),
+                        _ModuleInfo(
+                          title: 'Body Image & Self-Esteem',
+                          description: 'Navigating body changes through puberty, pregnancy, and menopause.',
+                          icon: Icons.favorite,
+                          route: '/coming-soon',
+                        ),
+                      ],
+                    ),
+                    // ── Pelvic Floor Health ──
+                    _SubSection(
+                      title: 'Pelvic Floor Health',
+                      modules: [
+                        _ModuleInfo(
+                          title: 'Pelvic Floor Exercises (Kegels)',
+                          description: 'Strengthening the pelvic floor — technique, benefits, and when to start.',
+                          icon: Icons.fitness_center,
+                          route: '/coming-soon',
+                        ),
+                        _ModuleInfo(
+                          title: 'Urinary Incontinence',
+                          description: 'Stress and urge incontinence in women — causes, types, and management.',
+                          icon: Icons.water_drop,
+                          route: '/coming-soon',
+                        ),
+                        _ModuleInfo(
+                          title: 'Pelvic Organ Prolapse',
+                          description: 'When pelvic organs descend due to weakened support — symptoms and treatment.',
+                          icon: Icons.healing,
+                          route: '/coming-soon',
+                        ),
+                      ],
+                    ),
+                    // ── Adolescent Gynaecology ──
+                    _SubSection(
+                      title: 'Adolescent Gynaecology',
+                      modules: [
+                        _ModuleInfo(
+                          title: 'Puberty & First Periods',
+                          description: 'Understanding puberty in girls — physical changes, menarche, and what to expect.',
+                          icon: Icons.child_care,
+                          route: '/coming-soon',
+                        ),
+                        _ModuleInfo(
+                          title: 'Menstrual Hygiene',
+                          description: 'Products, practices, and education — pads, tampons, menstrual cups, and hygiene tips.',
+                          icon: Icons.clean_hands,
+                          route: '/coming-soon',
+                        ),
+                        _ModuleInfo(
+                          title: 'Irregular Periods in Adolescents',
+                          description: 'Why periods may be irregular in teens — when to be concerned.',
+                          icon: Icons.calendar_today,
+                          route: '/coming-soon',
+                        ),
+                      ],
+                    ),
+                    // ── Perimenopause & Ageing ──
+                    _SubSection(
+                      title: 'Perimenopause & Ageing',
+                      modules: [
+                        _ModuleInfo(
+                          title: 'Osteoporosis',
+                          description: 'Bone loss after menopause — risk factors, prevention, and treatment.',
+                          icon: Icons.accessibility,
+                          route: '/coming-soon',
+                        ),
+                        _ModuleInfo(
+                          title: 'Vaginal Atrophy',
+                          description: 'Genitourinary syndrome of menopause — dryness, discomfort, and treatment options.',
+                          icon: Icons.healing,
+                          route: '/coming-soon',
+                        ),
+                        _ModuleInfo(
+                          title: 'Cardiovascular Risk in Women',
+                          description: 'Heart disease risk increases after menopause — awareness and prevention.',
+                          icon: Icons.favorite,
+                          route: '/coming-soon',
+                        ),
+                        _ModuleInfo(
+                          title: 'Sexual Health After Menopause',
+                          description: 'Addressing changes in libido, comfort, and intimacy during and after menopause.',
+                          icon: Icons.spa,
+                          route: '/coming-soon',
+                        ),
+                      ],
+                    ),
+                  ],
                 ),
                 const SizedBox(height: 24),
                 _buildSpecialtySection(
@@ -315,7 +562,386 @@ class EducationModulesScreen extends StatelessWidget {
                   title: 'Obstetrics',
                   icon: Icons.child_friendly_rounded,
                   color: const Color(0xFF2E7D32),
-                  modules: [],
+                  subSections: [
+                    // ── Early Pregnancy ──
+                    _SubSection(
+                      title: 'Early Pregnancy',
+                      modules: [
+                        _ModuleInfo(
+                          title: 'Confirming Pregnancy',
+                          description: 'Home pregnancy tests, hCG levels, and early ultrasound — confirming and dating pregnancy.',
+                          icon: Icons.check_circle,
+                          route: '/coming-soon',
+                        ),
+                        _ModuleInfo(
+                          title: 'First Trimester Screening',
+                          description: 'NT scan, double marker test, and early anomaly detection.',
+                          icon: Icons.biotech,
+                          route: '/coming-soon',
+                        ),
+                        _ModuleInfo(
+                          title: 'Morning Sickness (Nausea & Vomiting)',
+                          description: 'Causes and management of nausea in early pregnancy — when to seek medical help.',
+                          icon: Icons.sick,
+                          route: '/coming-soon',
+                        ),
+                        _ModuleInfo(
+                          title: 'Hyperemesis Gravidarum',
+                          description: 'Severe pregnancy sickness — symptoms, risks, and hospital management.',
+                          icon: Icons.local_hospital,
+                          route: '/coming-soon',
+                        ),
+                        _ModuleInfo(
+                          title: 'Miscarriage (Early Pregnancy Loss)',
+                          description: 'Types, causes, symptoms, and emotional support after miscarriage.',
+                          icon: Icons.heart_broken,
+                          route: '/coming-soon',
+                        ),
+                        _ModuleInfo(
+                          title: 'Ectopic Pregnancy',
+                          description: 'Pregnancy implanting outside the uterus — emergency signs, diagnosis, and treatment.',
+                          icon: Icons.warning_rounded,
+                          route: '/coming-soon',
+                        ),
+                        _ModuleInfo(
+                          title: 'Molar Pregnancy',
+                          description: 'Gestational trophoblastic disease — types, diagnosis, and follow-up.',
+                          icon: Icons.medical_services,
+                          route: '/coming-soon',
+                        ),
+                      ],
+                    ),
+                    // ── Antenatal Care ──
+                    _SubSection(
+                      title: 'Antenatal Care',
+                      modules: [
+                        _ModuleInfo(
+                          title: 'Routine Antenatal Visits',
+                          description: 'Schedule of check-ups, tests, and what to expect at each visit.',
+                          icon: Icons.calendar_month,
+                          route: '/coming-soon',
+                        ),
+                        _ModuleInfo(
+                          title: 'Antenatal Blood Tests',
+                          description: 'Blood group, Rh factor, haemoglobin, infections screening, and glucose tests.',
+                          icon: Icons.bloodtype,
+                          route: '/coming-soon',
+                        ),
+                        _ModuleInfo(
+                          title: 'Ultrasound Scans in Pregnancy',
+                          description: 'Dating scan, anomaly scan, growth scans — what each scan checks for.',
+                          icon: Icons.monitor,
+                          route: '/coming-soon',
+                        ),
+                        _ModuleInfo(
+                          title: 'Nutrition During Pregnancy',
+                          description: 'Essential nutrients, foods to avoid, weight gain guidelines, and supplements.',
+                          icon: Icons.restaurant,
+                          route: '/coming-soon',
+                        ),
+                        _ModuleInfo(
+                          title: 'Exercise During Pregnancy',
+                          description: 'Safe physical activities, yoga, walking — benefits and precautions.',
+                          icon: Icons.fitness_center,
+                          route: '/coming-soon',
+                        ),
+                        _ModuleInfo(
+                          title: 'Vaccinations in Pregnancy',
+                          description: 'Tdap, influenza, and COVID-19 vaccines — safety and timing during pregnancy.',
+                          icon: Icons.vaccines,
+                          route: '/coming-soon',
+                        ),
+                      ],
+                    ),
+                    // ── High-Risk Pregnancy ──
+                    _SubSection(
+                      title: 'High-Risk Pregnancy',
+                      modules: [
+                        _ModuleInfo(
+                          title: 'Gestational Diabetes (GDM)',
+                          description: 'Diabetes developing during pregnancy — screening, diet, insulin, and monitoring.',
+                          icon: Icons.monitor_heart,
+                          route: '/coming-soon',
+                        ),
+                        _ModuleInfo(
+                          title: 'Pre-eclampsia & Eclampsia',
+                          description: 'High blood pressure in pregnancy — warning signs, risks, and management.',
+                          icon: Icons.warning_rounded,
+                          route: '/coming-soon',
+                        ),
+                        _ModuleInfo(
+                          title: 'Gestational Hypertension',
+                          description: 'Pregnancy-induced high blood pressure — monitoring and treatment.',
+                          icon: Icons.speed,
+                          route: '/coming-soon',
+                        ),
+                        _ModuleInfo(
+                          title: 'Placenta Praevia',
+                          description: 'Low-lying placenta — types, risks of bleeding, and delivery planning.',
+                          icon: Icons.emergency,
+                          route: '/coming-soon',
+                        ),
+                        _ModuleInfo(
+                          title: 'Placental Abruption',
+                          description: 'Premature separation of the placenta — emergency signs and management.',
+                          icon: Icons.emergency,
+                          route: '/coming-soon',
+                        ),
+                        _ModuleInfo(
+                          title: 'Intrauterine Growth Restriction (IUGR)',
+                          description: 'When the baby is smaller than expected — causes, monitoring, and delivery timing.',
+                          icon: Icons.child_care,
+                          route: '/coming-soon',
+                        ),
+                        _ModuleInfo(
+                          title: 'Rh Incompatibility',
+                          description: 'Rh-negative mother with Rh-positive baby — Anti-D injection and management.',
+                          icon: Icons.bloodtype,
+                          route: '/coming-soon',
+                        ),
+                        _ModuleInfo(
+                          title: 'Multiple Pregnancy (Twins/Triplets)',
+                          description: 'Risks, monitoring, and delivery considerations for multiple gestations.',
+                          icon: Icons.group,
+                          route: '/coming-soon',
+                        ),
+                        _ModuleInfo(
+                          title: 'Thyroid Disorders in Pregnancy',
+                          description: 'Hypothyroidism and hyperthyroidism during pregnancy — effects and management.',
+                          icon: Icons.accessibility_new,
+                          route: '/coming-soon',
+                        ),
+                      ],
+                    ),
+                    // ── Common Pregnancy Symptoms ──
+                    _SubSection(
+                      title: 'Common Pregnancy Symptoms',
+                      modules: [
+                        _ModuleInfo(
+                          title: 'Back Pain in Pregnancy',
+                          description: 'Causes and relief measures for pregnancy-related back pain.',
+                          icon: Icons.accessibility,
+                          route: '/coming-soon',
+                        ),
+                        _ModuleInfo(
+                          title: 'Heartburn & Reflux',
+                          description: 'Acid reflux during pregnancy — dietary tips and safe medications.',
+                          icon: Icons.local_fire_department,
+                          route: '/coming-soon',
+                        ),
+                        _ModuleInfo(
+                          title: 'Constipation in Pregnancy',
+                          description: 'Hormonal causes and safe remedies for constipation during pregnancy.',
+                          icon: Icons.healing,
+                          route: '/coming-soon',
+                        ),
+                        _ModuleInfo(
+                          title: 'Swelling & Oedema',
+                          description: 'Normal vs concerning swelling in pregnancy — when to worry.',
+                          icon: Icons.water_drop,
+                          route: '/coming-soon',
+                        ),
+                        _ModuleInfo(
+                          title: 'Varicose Veins & Haemorrhoids',
+                          description: 'Common vascular changes in pregnancy — prevention and management.',
+                          icon: Icons.healing,
+                          route: '/coming-soon',
+                        ),
+                        _ModuleInfo(
+                          title: 'Leg Cramps & Restless Legs',
+                          description: 'Night-time cramps during pregnancy — causes and relief.',
+                          icon: Icons.directions_walk,
+                          route: '/coming-soon',
+                        ),
+                      ],
+                    ),
+                    // ── Labour & Delivery ──
+                    _SubSection(
+                      title: 'Labour & Delivery',
+                      modules: [
+                        _ModuleInfo(
+                          title: 'Signs of Labour',
+                          description: 'How to recognise true labour — contractions, water breaking, and when to go to hospital.',
+                          icon: Icons.timer,
+                          route: '/coming-soon',
+                        ),
+                        _ModuleInfo(
+                          title: 'Stages of Labour',
+                          description: 'First, second, and third stages of labour — what happens at each stage.',
+                          icon: Icons.timeline,
+                          route: '/coming-soon',
+                        ),
+                        _ModuleInfo(
+                          title: 'Pain Relief in Labour',
+                          description: 'Epidural, Entonox, pethidine, and non-pharmacological pain relief options.',
+                          icon: Icons.medication,
+                          route: '/coming-soon',
+                        ),
+                        _ModuleInfo(
+                          title: 'Normal (Vaginal) Delivery',
+                          description: 'What to expect during a normal vaginal birth — preparation and process.',
+                          icon: Icons.child_friendly,
+                          route: '/coming-soon',
+                        ),
+                        _ModuleInfo(
+                          title: 'Caesarean Section (C-Section)',
+                          description: 'Planned and emergency C-section — indications, procedure, and recovery.',
+                          icon: Icons.local_hospital,
+                          route: '/coming-soon',
+                        ),
+                        _ModuleInfo(
+                          title: 'Assisted Delivery (Forceps/Vacuum)',
+                          description: 'Instrumental delivery — when and why it may be needed.',
+                          icon: Icons.medical_services,
+                          route: '/coming-soon',
+                        ),
+                        _ModuleInfo(
+                          title: 'Induction of Labour',
+                          description: 'Why and how labour is induced — methods, risks, and what to expect.',
+                          icon: Icons.play_arrow,
+                          route: '/coming-soon',
+                        ),
+                        _ModuleInfo(
+                          title: 'Preterm Labour',
+                          description: 'Labour before 37 weeks — warning signs, management, and neonatal care.',
+                          icon: Icons.warning_amber,
+                          route: '/coming-soon',
+                        ),
+                        _ModuleInfo(
+                          title: 'Breech Presentation',
+                          description: 'Baby in breech position — external cephalic version (ECV) and delivery options.',
+                          icon: Icons.swap_vert,
+                          route: '/coming-soon',
+                        ),
+                      ],
+                    ),
+                    // ── Postpartum Care ──
+                    _SubSection(
+                      title: 'Postpartum Care',
+                      modules: [
+                        _ModuleInfo(
+                          title: 'Postnatal Recovery',
+                          description: 'Physical recovery after birth — healing, rest, and when to resume activities.',
+                          icon: Icons.hotel,
+                          route: '/coming-soon',
+                        ),
+                        _ModuleInfo(
+                          title: 'Breastfeeding',
+                          description: 'Initiating and maintaining breastfeeding — latching, positions, and common issues.',
+                          icon: Icons.child_care,
+                          route: '/coming-soon',
+                        ),
+                        _ModuleInfo(
+                          title: 'Postpartum Haemorrhage (PPH)',
+                          description: 'Excessive bleeding after delivery — causes, prevention, and emergency management.',
+                          icon: Icons.emergency,
+                          route: '/coming-soon',
+                        ),
+                        _ModuleInfo(
+                          title: 'Postpartum Depression & Anxiety',
+                          description: 'Mood disorders after childbirth — symptoms, screening, and getting help.',
+                          icon: Icons.psychology,
+                          route: '/coming-soon',
+                        ),
+                        _ModuleInfo(
+                          title: 'Postpartum Infections',
+                          description: 'Wound infections, endometritis, and mastitis — signs and treatment.',
+                          icon: Icons.coronavirus,
+                          route: '/coming-soon',
+                        ),
+                        _ModuleInfo(
+                          title: 'Contraception After Delivery',
+                          description: 'When fertility returns and contraceptive options while breastfeeding.',
+                          icon: Icons.shield,
+                          route: '/coming-soon',
+                        ),
+                        _ModuleInfo(
+                          title: 'Postnatal Exercises',
+                          description: 'Safe exercises after delivery — pelvic floor, core strengthening, and gradual return to fitness.',
+                          icon: Icons.fitness_center,
+                          route: '/coming-soon',
+                        ),
+                      ],
+                    ),
+                    // ── Newborn Care ──
+                    _SubSection(
+                      title: 'Newborn Care',
+                      modules: [
+                        _ModuleInfo(
+                          title: 'Newborn Screening Tests',
+                          description: 'Heel prick test, hearing screening, and other essential newborn checks.',
+                          icon: Icons.biotech,
+                          route: '/coming-soon',
+                        ),
+                        _ModuleInfo(
+                          title: 'Newborn Feeding',
+                          description: 'Breastfeeding vs formula — feeding schedules, hunger cues, and growth monitoring.',
+                          icon: Icons.restaurant,
+                          route: '/coming-soon',
+                        ),
+                        _ModuleInfo(
+                          title: 'Jaundice in Newborns',
+                          description: 'Neonatal jaundice — causes, phototherapy, and when to be concerned.',
+                          icon: Icons.sunny,
+                          route: '/coming-soon',
+                        ),
+                        _ModuleInfo(
+                          title: 'Immunisation Schedule',
+                          description: 'Vaccination schedule for newborns and infants — essential vaccines and timing.',
+                          icon: Icons.vaccines,
+                          route: '/coming-soon',
+                        ),
+                        _ModuleInfo(
+                          title: 'Umbilical Cord Care',
+                          description: 'How to care for the umbilical stump — hygiene and signs of infection.',
+                          icon: Icons.healing,
+                          route: '/coming-soon',
+                        ),
+                      ],
+                    ),
+                    // ── Pregnancy Complications ──
+                    _SubSection(
+                      title: 'Pregnancy Complications',
+                      modules: [
+                        _ModuleInfo(
+                          title: 'Oligohydramnios (Low Amniotic Fluid)',
+                          description: 'Low amniotic fluid levels — causes, monitoring, and delivery planning.',
+                          icon: Icons.water_drop,
+                          route: '/coming-soon',
+                        ),
+                        _ModuleInfo(
+                          title: 'Polyhydramnios (Excess Amniotic Fluid)',
+                          description: 'Excessive amniotic fluid — causes, risks, and management.',
+                          icon: Icons.water,
+                          route: '/coming-soon',
+                        ),
+                        _ModuleInfo(
+                          title: 'Premature Rupture of Membranes (PROM)',
+                          description: 'Water breaking before labour begins — management and risks of infection.',
+                          icon: Icons.warning_amber,
+                          route: '/coming-soon',
+                        ),
+                        _ModuleInfo(
+                          title: 'Cord Prolapse',
+                          description: 'Umbilical cord presenting before the baby — emergency management.',
+                          icon: Icons.emergency,
+                          route: '/coming-soon',
+                        ),
+                        _ModuleInfo(
+                          title: 'Cholestasis of Pregnancy',
+                          description: 'Intrahepatic cholestasis — itching, bile acid levels, and risks to baby.',
+                          icon: Icons.medical_information,
+                          route: '/coming-soon',
+                        ),
+                        _ModuleInfo(
+                          title: 'Anaemia in Pregnancy',
+                          description: 'Iron-deficiency anaemia during pregnancy — prevention, diagnosis, and treatment.',
+                          icon: Icons.bloodtype,
+                          route: '/coming-soon',
+                        ),
+                      ],
+                    ),
+                  ],
                 ),
               ],
             ),
