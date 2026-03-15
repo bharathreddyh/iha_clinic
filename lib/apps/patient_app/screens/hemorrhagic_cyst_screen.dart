@@ -257,8 +257,8 @@ class _HemorrhagicCystScreenState extends State<HemorrhagicCystScreen> {
       appBar: hospitalAppBar(
         context,
         title: _label('appBar'),
-        backgroundColor: _themeColor.withValues(alpha: 0.15),
-        foregroundColor: _themeColor,
+        backgroundColor: const Color(0xFF0D1B2A),
+        foregroundColor: Colors.white,
         actions: [
           _buildLanguageToggle(),
           const SizedBox(width: 8),

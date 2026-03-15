@@ -19,7 +19,7 @@ AppBar hospitalAppBar(
       ),
       child: Image.asset(
         'assets/images/mainpage/logo.png',
-        height: 50,
+        height: 100,
         fit: BoxFit.contain,
       ),
     ),
