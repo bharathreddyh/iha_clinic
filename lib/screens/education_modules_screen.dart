@@ -34,41 +34,58 @@ class EducationModulesScreen extends StatelessWidget {
                   title: 'Gynaecology',
                   icon: Icons.favorite_rounded,
                   color: const Color(0xFFAD1457),
-                  modules: [
-                    _ModuleInfo(
-                      title: 'Simple Ovarian Cyst',
-                      description:
-                          'Understanding simple (functional) ovarian cysts — the most common type of ovarian cyst.',
-                      icon: Icons.water_drop,
-                      route: '/simple-cyst',
+                  subSections: [
+                    _SubSection(
+                      title: 'Ovarian Cysts',
+                      modules: [
+                        _ModuleInfo(
+                          title: 'Simple Ovarian Cyst',
+                          description:
+                              'Understanding simple (functional) ovarian cysts — the most common type of ovarian cyst.',
+                          icon: Icons.water_drop,
+                          route: '/simple-cyst',
+                        ),
+                        _ModuleInfo(
+                          title: 'Hemorrhagic Ovarian Cyst',
+                          description:
+                              'Understanding hemorrhagic cysts — causes, symptoms, diagnosis, and treatment options.',
+                          icon: Icons.monitor_heart,
+                          route: '/hemorrhagic-cyst',
+                        ),
+                        _ModuleInfo(
+                          title: 'Polycystic Ovaries',
+                          description:
+                              'Learn about polycystic ovaries and PCOS — hormonal imbalance, symptoms, and management.',
+                          icon: Icons.medication,
+                          route: '/polycystic-ovaries',
+                        ),
+                        _ModuleInfo(
+                          title: 'Endometrioma (Chocolate Cyst)',
+                          description:
+                              'Understanding endometriomas — endometriosis-related ovarian cysts, diagnosis, and treatment.',
+                          icon: Icons.favorite,
+                          route: '/endometrioma',
+                        ),
+                        _ModuleInfo(
+                          title: 'Dermoid Cyst (Teratoma)',
+                          description:
+                              'Learn about dermoid cysts — benign ovarian tumours containing diverse tissue types.',
+                          icon: Icons.psychology,
+                          route: '/dermoid-cyst',
+                        ),
+                      ],
                     ),
-                    _ModuleInfo(
-                      title: 'Hemorrhagic Ovarian Cyst',
-                      description:
-                          'Understanding hemorrhagic cysts — causes, symptoms, diagnosis, and treatment options.',
-                      icon: Icons.monitor_heart,
-                      route: '/hemorrhagic-cyst',
+                    _SubSection(
+                      title: 'Uterine Conditions',
+                      modules: [],
                     ),
-                    _ModuleInfo(
-                      title: 'Polycystic Ovaries',
-                      description:
-                          'Learn about polycystic ovaries and PCOS — hormonal imbalance, symptoms, and management.',
-                      icon: Icons.medication,
-                      route: '/polycystic-ovaries',
+                    _SubSection(
+                      title: 'Menstrual Disorders',
+                      modules: [],
                     ),
-                    _ModuleInfo(
-                      title: 'Endometrioma (Chocolate Cyst)',
-                      description:
-                          'Understanding endometriomas — endometriosis-related ovarian cysts, diagnosis, and treatment.',
-                      icon: Icons.favorite,
-                      route: '/endometrioma',
-                    ),
-                    _ModuleInfo(
-                      title: 'Dermoid Cyst (Teratoma)',
-                      description:
-                          'Learn about dermoid cysts — benign ovarian tumours containing diverse tissue types.',
-                      icon: Icons.psychology,
-                      route: '/dermoid-cyst',
+                    _SubSection(
+                      title: 'Infections',
+                      modules: [],
                     ),
                   ],
                 ),
@@ -93,7 +110,8 @@ class EducationModulesScreen extends StatelessWidget {
     required String title,
     required IconData icon,
     required Color color,
-    required List<_ModuleInfo> modules,
+    List<_ModuleInfo> modules = const [],
+    List<_SubSection> subSections = const [],
   }) {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
@@ -121,7 +139,32 @@ class EducationModulesScreen extends StatelessWidget {
         ),
         const SizedBox(height: 12),
         ...modules.map((module) => _buildModuleCard(context, module, color)),
+        ...subSections.map((sub) => _buildSubSection(context, sub, color)),
       ],
+    );
+  }
+
+  Widget _buildSubSection(
+      BuildContext context, _SubSection sub, Color color) {
+    return Padding(
+      padding: const EdgeInsets.only(top: 8, bottom: 4),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Padding(
+            padding: const EdgeInsets.only(left: 4, bottom: 8),
+            child: Text(
+              sub.title,
+              style: TextStyle(
+                fontSize: 15,
+                fontWeight: FontWeight.w600,
+                color: Colors.grey[700],
+              ),
+            ),
+          ),
+          ...sub.modules.map((module) => _buildModuleCard(context, module, color)),
+        ],
+      ),
     );
   }
 
@@ -179,6 +222,16 @@ class EducationModulesScreen extends StatelessWidget {
       ),
     );
   }
+}
+
+class _SubSection {
+  final String title;
+  final List<_ModuleInfo> modules;
+
+  const _SubSection({
+    required this.title,
+    required this.modules,
+  });
 }
 
 class _ModuleInfo {
