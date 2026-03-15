@@ -16,6 +16,7 @@ import 'apps/patient_app/screens/dermoid_cyst_screen.dart';
 import 'apps/patient_app/screens/serous_cystadenoma_screen.dart';
 import 'apps/patient_app/screens/mucinous_cystadenoma_screen.dart';
 import 'apps/patient_app/screens/ovarian_fibroma_screen.dart';
+import 'apps/patient_app/screens/coming_soon_screen.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -125,6 +126,14 @@ class PatientEducationApp extends StatelessWidget {
           return MaterialPageRoute(
             settings: settings,
             builder: (_) => const OvarianFibromaScreen(),
+          );
+        }
+
+        // Coming Soon (placeholder for modules under development)
+        if (uri.path == '/coming-soon') {
+          return MaterialPageRoute(
+            settings: settings,
+            builder: (_) => const ComingSoonScreen(),
           );
         }
 
