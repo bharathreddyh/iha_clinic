@@ -35,6 +35,7 @@ class EducationModulesScreen extends StatelessWidget {
                   icon: Icons.favorite_rounded,
                   color: const Color(0xFFAD1457),
                   subSections: [
+                    // ── Ovarian Pathology ──
                     _SubSection(
                       title: 'Ovarian Cysts',
                       modules: [
@@ -76,15 +77,50 @@ class EducationModulesScreen extends StatelessWidget {
                       ],
                     ),
                     _SubSection(
+                      title: 'Ovarian Tumours',
+                      modules: [],
+                    ),
+                    _SubSection(
+                      title: 'Ovarian Torsion',
+                      modules: [],
+                    ),
+                    _SubSection(
+                      title: 'Ovarian Hyperstimulation Syndrome (OHSS)',
+                      modules: [],
+                    ),
+                    // ── Uterine Conditions ──
+                    _SubSection(
                       title: 'Uterine Conditions',
                       modules: [],
                     ),
+                    // ── Endometriosis ──
+                    _SubSection(
+                      title: 'Endometriosis',
+                      modules: [],
+                    ),
+                    // ── Menstrual Disorders ──
                     _SubSection(
                       title: 'Menstrual Disorders',
                       modules: [],
                     ),
+                    // ── Cervical Conditions ──
+                    _SubSection(
+                      title: 'Cervical Conditions',
+                      modules: [],
+                    ),
+                    // ── Infections ──
                     _SubSection(
                       title: 'Infections',
+                      modules: [],
+                    ),
+                    // ── Fertility & Reproductive Health ──
+                    _SubSection(
+                      title: 'Fertility & Reproductive Health',
+                      modules: [],
+                    ),
+                    // ── Breast Conditions ──
+                    _SubSection(
+                      title: 'Breast Conditions',
                       modules: [],
                     ),
                   ],
