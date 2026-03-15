@@ -9,6 +9,10 @@ import 'apps/reception_app/screens/mobile_entry_screen.dart';
 import 'apps/patient_app/screens/landing_screen.dart';
 import 'apps/patient_app/screens/modules_list_screen.dart';
 import 'apps/patient_app/screens/hemorrhagic_cyst_screen.dart';
+import 'apps/patient_app/screens/simple_cyst_screen.dart';
+import 'apps/patient_app/screens/polycystic_ovaries_screen.dart';
+import 'apps/patient_app/screens/endometrioma_screen.dart';
+import 'apps/patient_app/screens/dermoid_cyst_screen.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -62,6 +66,38 @@ class PatientEducationApp extends StatelessWidget {
           return MaterialPageRoute(
             settings: settings,
             builder: (_) => const HemorrhagicCystScreen(),
+          );
+        }
+
+        // Simple Ovarian Cyst
+        if (uri.path == '/simple-cyst') {
+          return MaterialPageRoute(
+            settings: settings,
+            builder: (_) => const SimpleCystScreen(),
+          );
+        }
+
+        // Polycystic Ovaries
+        if (uri.path == '/polycystic-ovaries') {
+          return MaterialPageRoute(
+            settings: settings,
+            builder: (_) => const PolycysticOvariesScreen(),
+          );
+        }
+
+        // Endometrioma
+        if (uri.path == '/endometrioma') {
+          return MaterialPageRoute(
+            settings: settings,
+            builder: (_) => const EndometriomaScreen(),
+          );
+        }
+
+        // Dermoid Cyst
+        if (uri.path == '/dermoid-cyst') {
+          return MaterialPageRoute(
+            settings: settings,
+            builder: (_) => const DermoidCystScreen(),
           );
         }
 

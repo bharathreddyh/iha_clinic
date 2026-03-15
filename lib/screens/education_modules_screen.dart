@@ -28,11 +28,39 @@ class EducationModulesScreen extends StatelessWidget {
                   color: const Color(0xFFAD1457),
                   modules: [
                     _ModuleInfo(
+                      title: 'Simple Ovarian Cyst',
+                      description:
+                          'Understanding simple (functional) ovarian cysts — the most common type of ovarian cyst.',
+                      icon: Icons.water_drop,
+                      route: '/simple-cyst',
+                    ),
+                    _ModuleInfo(
                       title: 'Hemorrhagic Ovarian Cyst',
                       description:
                           'Understanding hemorrhagic cysts — causes, symptoms, diagnosis, and treatment options.',
                       icon: Icons.monitor_heart,
                       route: '/hemorrhagic-cyst',
+                    ),
+                    _ModuleInfo(
+                      title: 'Polycystic Ovaries',
+                      description:
+                          'Learn about polycystic ovaries and PCOS — hormonal imbalance, symptoms, and management.',
+                      icon: Icons.medication,
+                      route: '/polycystic-ovaries',
+                    ),
+                    _ModuleInfo(
+                      title: 'Endometrioma (Chocolate Cyst)',
+                      description:
+                          'Understanding endometriomas — endometriosis-related ovarian cysts, diagnosis, and treatment.',
+                      icon: Icons.favorite,
+                      route: '/endometrioma',
+                    ),
+                    _ModuleInfo(
+                      title: 'Dermoid Cyst (Teratoma)',
+                      description:
+                          'Learn about dermoid cysts — benign ovarian tumours containing diverse tissue types.',
+                      icon: Icons.psychology,
+                      route: '/dermoid-cyst',
                     ),
                   ],
                 ),
