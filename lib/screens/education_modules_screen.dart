@@ -10,8 +10,8 @@ class EducationModulesScreen extends StatelessWidget {
       appBar: hospitalAppBar(
         context,
         title: 'Education Modules',
-        backgroundColor: const Color(0xFFAD1457).withValues(alpha: 0.15),
-        foregroundColor: const Color(0xFFAD1457),
+        backgroundColor: const Color(0xFF0D1B2A),
+        foregroundColor: Colors.white,
       ),
       body: SingleChildScrollView(
         padding: const EdgeInsets.all(16),
