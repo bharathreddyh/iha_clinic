@@ -23,6 +23,14 @@ class EducationModulesScreen extends StatelessWidget {
               children: [
                 _buildSpecialtySection(
                   context,
+                  title: 'General',
+                  icon: Icons.health_and_safety_rounded,
+                  color: const Color(0xFF1565C0),
+                  modules: [],
+                ),
+                const SizedBox(height: 24),
+                _buildSpecialtySection(
+                  context,
                   title: 'Gynaecology',
                   icon: Icons.favorite_rounded,
                   color: const Color(0xFFAD1457),
@@ -63,6 +71,14 @@ class EducationModulesScreen extends StatelessWidget {
                       route: '/dermoid-cyst',
                     ),
                   ],
+                ),
+                const SizedBox(height: 24),
+                _buildSpecialtySection(
+                  context,
+                  title: 'Obstetrics',
+                  icon: Icons.child_friendly_rounded,
+                  color: const Color(0xFF2E7D32),
+                  modules: [],
                 ),
               ],
             ),
