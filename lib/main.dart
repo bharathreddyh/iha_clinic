@@ -13,6 +13,9 @@ import 'apps/patient_app/screens/simple_cyst_screen.dart';
 import 'apps/patient_app/screens/polycystic_ovaries_screen.dart';
 import 'apps/patient_app/screens/endometrioma_screen.dart';
 import 'apps/patient_app/screens/dermoid_cyst_screen.dart';
+import 'apps/patient_app/screens/serous_cystadenoma_screen.dart';
+import 'apps/patient_app/screens/mucinous_cystadenoma_screen.dart';
+import 'apps/patient_app/screens/ovarian_fibroma_screen.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -98,6 +101,30 @@ class PatientEducationApp extends StatelessWidget {
           return MaterialPageRoute(
             settings: settings,
             builder: (_) => const DermoidCystScreen(),
+          );
+        }
+
+        // Serous Cystadenoma
+        if (uri.path == '/serous-cystadenoma') {
+          return MaterialPageRoute(
+            settings: settings,
+            builder: (_) => const SerousCystadenomaScreen(),
+          );
+        }
+
+        // Mucinous Cystadenoma
+        if (uri.path == '/mucinous-cystadenoma') {
+          return MaterialPageRoute(
+            settings: settings,
+            builder: (_) => const MucinousCystadenomaScreen(),
+          );
+        }
+
+        // Ovarian Fibroma
+        if (uri.path == '/ovarian-fibroma') {
+          return MaterialPageRoute(
+            settings: settings,
+            builder: (_) => const OvarianFibromaScreen(),
           );
         }
 
