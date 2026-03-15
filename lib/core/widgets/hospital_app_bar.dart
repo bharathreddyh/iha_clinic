@@ -11,6 +11,7 @@ AppBar hospitalAppBar(
 }) {
   return AppBar(
     centerTitle: true,
+    toolbarHeight: 120,
     title: GestureDetector(
       onTap: () => Navigator.pushNamedAndRemoveUntil(
         context,
