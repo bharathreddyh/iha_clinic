@@ -78,50 +78,234 @@ class EducationModulesScreen extends StatelessWidget {
                     ),
                     _SubSection(
                       title: 'Ovarian Tumours',
-                      modules: [],
+                      modules: [
+                        _ModuleInfo(
+                          title: 'Serous Cystadenoma',
+                          description: 'Common benign ovarian tumour filled with thin, watery fluid.',
+                          icon: Icons.water_drop,
+                          route: '/coming-soon',
+                        ),
+                        _ModuleInfo(
+                          title: 'Mucinous Cystadenoma',
+                          description: 'Benign ovarian tumour containing thick, mucus-like fluid.',
+                          icon: Icons.water_drop,
+                          route: '/coming-soon',
+                        ),
+                        _ModuleInfo(
+                          title: 'Ovarian Fibroma',
+                          description: 'Solid benign tumour of the ovary arising from stromal tissue.',
+                          icon: Icons.water_drop,
+                          route: '/coming-soon',
+                        ),
+                      ],
                     ),
                     _SubSection(
                       title: 'Ovarian Torsion',
-                      modules: [],
+                      modules: [
+                        _ModuleInfo(
+                          title: 'Ovarian Torsion',
+                          description: 'Emergency condition where the ovary twists on its blood supply.',
+                          icon: Icons.warning_rounded,
+                          route: '/coming-soon',
+                        ),
+                      ],
                     ),
                     _SubSection(
                       title: 'Ovarian Hyperstimulation Syndrome (OHSS)',
-                      modules: [],
+                      modules: [
+                        _ModuleInfo(
+                          title: 'OHSS',
+                          description: 'Ovarian hyperstimulation syndrome — a complication of fertility treatment.',
+                          icon: Icons.medical_services,
+                          route: '/coming-soon',
+                        ),
+                      ],
                     ),
                     // ── Uterine Conditions ──
                     _SubSection(
                       title: 'Uterine Conditions',
-                      modules: [],
+                      modules: [
+                        _ModuleInfo(
+                          title: 'Fibroids (Leiomyoma)',
+                          description: 'Non-cancerous growths of the uterus — causes, symptoms, and treatment.',
+                          icon: Icons.circle,
+                          route: '/coming-soon',
+                        ),
+                        _ModuleInfo(
+                          title: 'Adenomyosis',
+                          description: 'Condition where endometrial tissue grows into the uterine muscle wall.',
+                          icon: Icons.circle,
+                          route: '/coming-soon',
+                        ),
+                        _ModuleInfo(
+                          title: 'Endometrial Polyps',
+                          description: 'Overgrowths of the uterine lining — causes, diagnosis, and removal.',
+                          icon: Icons.circle,
+                          route: '/coming-soon',
+                        ),
+                        _ModuleInfo(
+                          title: 'Uterine Prolapse',
+                          description: 'When the uterus descends into the vaginal canal due to weakened support.',
+                          icon: Icons.circle,
+                          route: '/coming-soon',
+                        ),
+                        _ModuleInfo(
+                          title: 'Asherman\'s Syndrome',
+                          description: 'Intrauterine adhesions (scar tissue) — causes, symptoms, and treatment.',
+                          icon: Icons.circle,
+                          route: '/coming-soon',
+                        ),
+                      ],
                     ),
                     // ── Endometriosis ──
                     _SubSection(
                       title: 'Endometriosis',
-                      modules: [],
+                      modules: [
+                        _ModuleInfo(
+                          title: 'Endometriosis',
+                          description: 'Endometrial-like tissue growing outside the uterus — pain, infertility, and management.',
+                          icon: Icons.spa,
+                          route: '/coming-soon',
+                        ),
+                      ],
                     ),
                     // ── Menstrual Disorders ──
                     _SubSection(
                       title: 'Menstrual Disorders',
-                      modules: [],
+                      modules: [
+                        _ModuleInfo(
+                          title: 'Abnormal Uterine Bleeding (AUB)',
+                          description: 'Heavy, prolonged, or irregular bleeding — causes and management.',
+                          icon: Icons.bloodtype,
+                          route: '/coming-soon',
+                        ),
+                        _ModuleInfo(
+                          title: 'Dysmenorrhoea',
+                          description: 'Painful periods — understanding primary and secondary causes.',
+                          icon: Icons.bloodtype,
+                          route: '/coming-soon',
+                        ),
+                        _ModuleInfo(
+                          title: 'Amenorrhoea',
+                          description: 'Absence of menstrual periods — causes, evaluation, and treatment.',
+                          icon: Icons.bloodtype,
+                          route: '/coming-soon',
+                        ),
+                        _ModuleInfo(
+                          title: 'Premenstrual Syndrome (PMS/PMDD)',
+                          description: 'Physical and emotional symptoms before menstruation — management strategies.',
+                          icon: Icons.bloodtype,
+                          route: '/coming-soon',
+                        ),
+                      ],
                     ),
                     // ── Cervical Conditions ──
                     _SubSection(
                       title: 'Cervical Conditions',
-                      modules: [],
+                      modules: [
+                        _ModuleInfo(
+                          title: 'Cervical Erosion / Ectropion',
+                          description: 'When cells from inside the cervix appear on the outer surface.',
+                          icon: Icons.shield,
+                          route: '/coming-soon',
+                        ),
+                        _ModuleInfo(
+                          title: 'Cervical Polyps',
+                          description: 'Small growths on the cervix — usually benign, causes and removal.',
+                          icon: Icons.shield,
+                          route: '/coming-soon',
+                        ),
+                        _ModuleInfo(
+                          title: 'Cervical Cancer Screening',
+                          description: 'Pap smear and HPV testing — importance of regular screening.',
+                          icon: Icons.shield,
+                          route: '/coming-soon',
+                        ),
+                      ],
                     ),
                     // ── Infections ──
                     _SubSection(
                       title: 'Infections',
-                      modules: [],
+                      modules: [
+                        _ModuleInfo(
+                          title: 'Pelvic Inflammatory Disease (PID)',
+                          description: 'Infection of the female reproductive organs — causes, symptoms, and treatment.',
+                          icon: Icons.coronavirus,
+                          route: '/coming-soon',
+                        ),
+                        _ModuleInfo(
+                          title: 'Vaginal Candidiasis',
+                          description: 'Yeast infection — common causes, symptoms, and treatment options.',
+                          icon: Icons.coronavirus,
+                          route: '/coming-soon',
+                        ),
+                        _ModuleInfo(
+                          title: 'Bacterial Vaginosis',
+                          description: 'Bacterial imbalance in the vagina — symptoms, diagnosis, and treatment.',
+                          icon: Icons.coronavirus,
+                          route: '/coming-soon',
+                        ),
+                        _ModuleInfo(
+                          title: 'Sexually Transmitted Infections (STIs)',
+                          description: 'Chlamydia, gonorrhoea, and other STIs — prevention, testing, and treatment.',
+                          icon: Icons.coronavirus,
+                          route: '/coming-soon',
+                        ),
+                      ],
                     ),
                     // ── Fertility & Reproductive Health ──
                     _SubSection(
                       title: 'Fertility & Reproductive Health',
-                      modules: [],
+                      modules: [
+                        _ModuleInfo(
+                          title: 'Infertility Workup',
+                          description: 'Understanding fertility evaluation — tests and investigations for couples.',
+                          icon: Icons.child_care,
+                          route: '/coming-soon',
+                        ),
+                        _ModuleInfo(
+                          title: 'IVF / IUI Basics',
+                          description: 'Assisted reproduction techniques — what to expect from IVF and IUI.',
+                          icon: Icons.child_care,
+                          route: '/coming-soon',
+                        ),
+                        _ModuleInfo(
+                          title: 'Ectopic Pregnancy',
+                          description: 'Pregnancy outside the uterus — symptoms, diagnosis, and emergency management.',
+                          icon: Icons.child_care,
+                          route: '/coming-soon',
+                        ),
+                        _ModuleInfo(
+                          title: 'Recurrent Pregnancy Loss',
+                          description: 'Repeated miscarriages — causes, evaluation, and treatment options.',
+                          icon: Icons.child_care,
+                          route: '/coming-soon',
+                        ),
+                      ],
                     ),
                     // ── Breast Conditions ──
                     _SubSection(
                       title: 'Breast Conditions',
-                      modules: [],
+                      modules: [
+                        _ModuleInfo(
+                          title: 'Fibroadenoma',
+                          description: 'Common benign breast lump — understanding, diagnosis, and management.',
+                          icon: Icons.healing,
+                          route: '/coming-soon',
+                        ),
+                        _ModuleInfo(
+                          title: 'Breast Cysts',
+                          description: 'Fluid-filled sacs in the breast — causes, symptoms, and treatment.',
+                          icon: Icons.healing,
+                          route: '/coming-soon',
+                        ),
+                        _ModuleInfo(
+                          title: 'Breast Self-Examination',
+                          description: 'How to perform a breast self-exam — step-by-step guide for early detection.',
+                          icon: Icons.healing,
+                          route: '/coming-soon',
+                        ),
+                      ],
                     ),
                   ],
                 ),
