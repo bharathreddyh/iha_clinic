@@ -531,6 +531,7 @@ Map<String, EducationTopicData> getObstetricsContent() {
 
     'routine-antenatal-visits': const EducationTopicData(
       titleEn: 'Routine Antenatal Visits',
+      titleKn: 'ನಿಯಮಿತ ಗರ್ಭಾವಸ್ಥೆಯ ಭೇಟಿಗಳು',
       sectionsEn: [
         {
           'title': 'Why Are Antenatal Visits Important?',
@@ -568,6 +569,7 @@ Map<String, EducationTopicData> getObstetricsContent() {
 
     'antenatal-blood-tests': const EducationTopicData(
       titleEn: 'Antenatal Blood Tests',
+      titleKn: 'ಗರ್ಭಾವಸ್ಥೆಯ ರಕ್ತ ಪರೀಕ್ಷೆಗಳು',
       sectionsEn: [
         {
           'title': 'Why Are Blood Tests Done?',
@@ -610,6 +612,7 @@ Map<String, EducationTopicData> getObstetricsContent() {
 
     'ultrasound-pregnancy': const EducationTopicData(
       titleEn: 'Ultrasound Scans in Pregnancy',
+      titleKn: 'ಗರ್ಭಾವಸ್ಥೆಯಲ್ಲಿ Ultrasound Scan ಗಳು',
       sectionsEn: [
         {
           'title': 'How Ultrasound Works',
@@ -647,6 +650,7 @@ Map<String, EducationTopicData> getObstetricsContent() {
 
     'nutrition-pregnancy': const EducationTopicData(
       titleEn: 'Nutrition During Pregnancy',
+      titleKn: 'ಗರ್ಭಾವಸ್ಥೆಯಲ್ಲಿ ಪೋಷಣೆ',
       sectionsEn: [
         {
           'title': 'Why Nutrition Matters',
@@ -1086,6 +1090,7 @@ Map<String, EducationTopicData> getObstetricsContent() {
 
     'thyroid-pregnancy': const EducationTopicData(
       titleEn: 'Thyroid Disorders in Pregnancy',
+      titleKn: 'ಗರ್ಭಾವಸ್ಥೆಯಲ್ಲಿ Thyroid ಸಮಸ್ಯೆಗಳು',
       sectionsEn: [
         {
           'title': 'The Thyroid & Pregnancy',
@@ -1123,7 +1128,43 @@ Map<String, EducationTopicData> getObstetricsContent() {
               'Women with a personal or family history of thyroid disease, type 1 diabetes, or other autoimmune conditions should have their thyroid function tested early in pregnancy. Early detection and treatment of thyroid disorders significantly improve pregnancy outcomes for both mother and baby.',
         },
       ],
-      sectionsKn: [],
+      sectionsKn: [
+        {
+          'title': 'Thyroid ಮತ್ತು ಗರ್ಭಾವಸ್ಥೆ',
+          'body':
+              'Thyroid ಗ್ರಂಥಿಯು ಚಯಾಪಚಯ, ಶಕ್ತಿ ಮತ್ತು ಬೆಳವಣಿಗೆಯನ್ನು ನಿಯಂತ್ರಿಸುವ ಹಾರ್ಮೋನ್‌ಗಳನ್ನು ಉತ್ಪಾದಿಸುತ್ತದೆ, ಮತ್ತು ಗರ್ಭಾವಸ್ಥೆಯಲ್ಲಿ ಮಗುವಿನ ಮೆದುಳು ಮತ್ತು ನರಮಂಡಲದ ಬೆಳವಣಿಗೆಯಲ್ಲಿ ಪ್ರಮುಖ ಪಾತ್ರ ವಹಿಸುತ್ತದೆ. ಗರ್ಭಾವಸ್ಥೆಯು thyroid ಮೇಲೆ ಹೆಚ್ಚಿನ ಬೇಡಿಕೆ ಹಾಕುತ್ತದೆ, ಮತ್ತು ಸಾಮಾನ್ಯ thyroid ಹಾರ್ಮೋನ್ ಮಟ್ಟಗಳು ಗರ್ಭಿಣಿಯಲ್ಲದ ಮಹಿಳೆಯರಿಗಿಂತ ಭಿನ್ನವಾಗಿರುತ್ತವೆ.',
+        },
+        {
+          'title': 'Hypothyroidism (ಕಡಿಮೆ Thyroid)',
+          'body':
+              'ಗರ್ಭಾವಸ್ಥೆಯಲ್ಲಿ hypothyroidism (ಕಡಿಮೆ ಕಾರ್ಯನಿರ್ವಹಿಸುವ thyroid) ಸಾಮಾನ್ಯವಾಗಿ Hashimoto\'s thyroiditis ಎಂಬ ಸ್ವಯಂ ಪ್ರತಿರಕ್ಷಣಾ ಸ್ಥಿತಿಯಿಂದ ಉಂಟಾಗುತ್ತದೆ. ಚಿಕಿತ್ಸೆ ನೀಡದ hypothyroidism ಗರ್ಭಪಾತ, pre-eclampsia, ರಕ್ತಹೀನತೆ, ಜರಾಯು ಬೇರ್ಪಡುವಿಕೆ ಮತ್ತು ಮಗುವಿನ ನರ ಬೆಳವಣಿಗೆಯ ಮೇಲೆ ಪರಿಣಾಮ ಬೀರುವ ಅಪಾಯವನ್ನು ಹೆಚ್ಚಿಸಬಹುದು.',
+        },
+        {
+          'title': 'Hypothyroidism ಚಿಕಿತ್ಸೆ',
+          'body':
+              'Hypothyroidism ಅನ್ನು levothyroxine ಎಂಬ ಕೃತಕ thyroid ಹಾರ್ಮೋನ್‌ನಿಂದ ಚಿಕಿತ್ಸೆ ನೀಡಲಾಗುತ್ತದೆ, ಇದು ಗರ್ಭಾವಸ್ಥೆ ಮತ್ತು ಸ್ತನ್ಯಪಾನದ ಸಮಯದಲ್ಲಿ ಸುರಕ್ಷಿತವಾಗಿದೆ. ಗರ್ಭಾವಸ್ಥೆಯಲ್ಲಿ ಡೋಸ್ ಹೆಚ್ಚಿಸಬೇಕಾಗಬಹುದು, ಮತ್ತು ಮಟ್ಟಗಳು ಗುರಿ ವ್ಯಾಪ್ತಿಯಲ್ಲಿರುವುದನ್ನು ಖಚಿತಪಡಿಸಲು ಪ್ರತಿ ನಾಲ್ಕರಿಂದ ಆರು ವಾರಗಳಿಗೊಮ್ಮೆ thyroid ಕಾರ್ಯ ಪರೀಕ್ಷೆಗಳನ್ನು ನಿಯಮಿತವಾಗಿ ಮಾಡಲಾಗುತ್ತದೆ.',
+        },
+        {
+          'title': 'Hyperthyroidism (ಹೆಚ್ಚಿನ Thyroid)',
+          'body':
+              'ಗರ್ಭಾವಸ್ಥೆಯಲ್ಲಿ hyperthyroidism (ಅತಿಯಾಗಿ ಕಾರ್ಯನಿರ್ವಹಿಸುವ thyroid) ಸಾಮಾನ್ಯವಾಗಿ Graves\' disease ನಿಂದ ಉಂಟಾಗುತ್ತದೆ. ನಿಯಂತ್ರಿಸದ hyperthyroidism ಅಕಾಲಿಕ ಹೆರಿಗೆ, ಕಡಿಮೆ ಜನನ ತೂಕ, pre-eclampsia, ತಾಯಿಯ ಹೃದಯ ವೈಫಲ್ಯ, ಮತ್ತು ತೀವ್ರ ಸಂದರ್ಭಗಳಲ್ಲಿ thyroid storm ಎಂಬ ಜೀವಕ್ಕೆ ಅಪಾಯಕಾರಿ ಸ್ಥಿತಿಗೆ ಕಾರಣವಾಗಬಹುದು.',
+        },
+        {
+          'title': 'Hyperthyroidism ಚಿಕಿತ್ಸೆ',
+          'body':
+              'ಗರ್ಭಾವಸ್ಥೆಯಲ್ಲಿ hyperthyroidism ಅನ್ನು anti-thyroid ಔಷಧಿಗಳಿಂದ ಚಿಕಿತ್ಸೆ ನೀಡಲಾಗುತ್ತದೆ, ಮೊದಲ ತ್ರೈಮಾಸಿಕದಲ್ಲಿ propylthiouracil (PTU) ಆದ್ಯತೆ ನೀಡಲಾಗುತ್ತದೆ ಮತ್ತು ಎರಡನೇ ಹಾಗೂ ಮೂರನೇ ತ್ರೈಮಾಸಿಕಗಳಲ್ಲಿ carbimazole ಪರಿಗಣಿಸಲಾಗುತ್ತದೆ. ಮಗುವಿಗೆ ಅಪಾಯವನ್ನು ಕಡಿಮೆ ಮಾಡಲು ಕನಿಷ್ಠ ಪರಿಣಾಮಕಾರಿ ಡೋಸ್ ಬಳಸಲಾಗುತ್ತದೆ, ಮತ್ತು thyroid ಮಟ್ಟಗಳ ನಿಕಟ ಮೇಲ್ವಿಚಾರಣೆ ಅತ್ಯಗತ್ಯ.',
+        },
+        {
+          'title': 'ಹೆರಿಗೆಯ ನಂತರದ Thyroiditis',
+          'body':
+              'Postpartum thyroiditis ಎಂಬುದು ಹೆರಿಗೆಯ ನಂತರ ಮೊದಲ ವರ್ಷದಲ್ಲಿ ಸಂಭವಿಸಬಹುದಾದ thyroid ಉರಿಯೂತವಾಗಿದ್ದು, ಆರಂಭದಲ್ಲಿ hyperthyroidism ಮತ್ತು ನಂತರ hypothyroidism ಉಂಟಾಗುತ್ತದೆ. ಹೆಚ್ಚಿನ ಮಹಿಳೆಯರು 12 ರಿಂದ 18 ತಿಂಗಳೊಳಗೆ ಸಾಮಾನ್ಯ thyroid ಕಾರ್ಯವನ್ನು ಮರಳಿ ಪಡೆಯುತ್ತಾರೆ, ಆದರೆ ಕೆಲವರಿಗೆ ಶಾಶ್ವತ hypothyroidism ಬೆಳೆಯಬಹುದು ಮತ್ತು ನಿರಂತರ ಚಿಕಿತ್ಸೆ ಅಗತ್ಯವಾಗಬಹುದು.',
+        },
+        {
+          'title': 'ಪರೀಕ್ಷೆಯ ಮಹತ್ವ',
+          'body':
+              'Thyroid ಕಾಯಿಲೆಯ ವೈಯಕ್ತಿಕ ಅಥವಾ ಕುಟುಂಬದ ಇತಿಹಾಸ, type 1 diabetes, ಅಥವಾ ಇತರ ಸ್ವಯಂ ಪ್ರತಿರಕ್ಷಣಾ ಸ್ಥಿತಿಗಳಿರುವ ಮಹಿಳೆಯರು ಗರ್ಭಾವಸ್ಥೆಯ ಆರಂಭದಲ್ಲಿ thyroid ಕಾರ್ಯ ಪರೀಕ್ಷೆ ಮಾಡಿಸಿಕೊಳ್ಳಬೇಕು. Thyroid ಸಮಸ್ಯೆಗಳ ಆರಂಭಿಕ ಪತ್ತೆ ಮತ್ತು ಚಿಕಿತ್ಸೆಯು ತಾಯಿ ಮತ್ತು ಮಗು ಇಬ್ಬರಿಗೂ ಗರ್ಭಾವಸ್ಥೆಯ ಫಲಿತಾಂಶಗಳನ್ನು ಗಮನಾರ್ಹವಾಗಿ ಸುಧಾರಿಸುತ್ತದೆ.',
+        },
+      ],
     ),
 
     // ── Common Pregnancy Symptoms ─────────────────────────────────────────
