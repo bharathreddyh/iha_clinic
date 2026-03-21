@@ -2,11 +2,16 @@ import 'package:flutter/material.dart';
 import '../../../core/models/module.dart';
 import '../../../core/widgets/hospital_app_bar.dart';
 
-class ModuleDetailScreen extends StatelessWidget {
+class ModuleDetailScreen extends StatefulWidget {
   final Module module;
 
   const ModuleDetailScreen({super.key, required this.module});
 
+  @override
+  State<ModuleDetailScreen> createState() => _ModuleDetailScreenState();
+}
+
+class _ModuleDetailScreenState extends State<ModuleDetailScreen> {
   static const Map<String, IconData> _iconMap = {
     'local_hospital': Icons.local_hospital,
     'favorite': Icons.favorite,
@@ -29,17 +34,34 @@ class ModuleDetailScreen extends StatelessWidget {
     'book': Color(0xFF37474F),
   };
 
+  String _language = 'en';
+
+  Color get _themeColor => _colorMap[widget.module.icon] ?? Colors.blueGrey;
+
+  bool get _hasKannada {
+    final content = widget.module.content;
+    if (content.containsKey('sections_kn')) {
+      final sections = content['sections_kn'];
+      return sections is List && sections.isNotEmpty;
+    }
+    return false;
+  }
+
   @override
   Widget build(BuildContext context) {
-    final color = _colorMap[module.icon] ?? Colors.blueGrey;
+    final color = _themeColor;
     final sections = _parseSections();
 
     return Scaffold(
       appBar: hospitalAppBar(
         context,
-        title: module.name,
+        title: widget.module.name,
         backgroundColor: color.withValues(alpha: 0.15),
         foregroundColor: color,
+        actions: [
+          if (_hasKannada) _buildLanguageToggle(),
+          if (_hasKannada) const SizedBox(width: 8),
+        ],
       ),
       body: SingleChildScrollView(
         child: Center(
@@ -58,14 +80,14 @@ class ModuleDetailScreen extends StatelessWidget {
                         radius: 36,
                         backgroundColor: color.withValues(alpha: 0.15),
                         child: Icon(
-                          _iconMap[module.icon] ?? Icons.book,
+                          _iconMap[widget.module.icon] ?? Icons.book,
                           size: 36,
                           color: color,
                         ),
                       ),
                       const SizedBox(height: 12),
                       Text(
-                        module.name,
+                        widget.module.name,
                         style: Theme.of(context)
                             .textTheme
                             .headlineSmall
@@ -77,7 +99,7 @@ class ModuleDetailScreen extends StatelessWidget {
                       ),
                       const SizedBox(height: 8),
                       Text(
-                        module.description,
+                        widget.module.description,
                         style: TextStyle(
                           color: Colors.grey[600],
                           fontSize: 15,
@@ -157,10 +179,54 @@ class ModuleDetailScreen extends StatelessWidget {
     );
   }
 
+  Widget _buildLanguageToggle() {
+    return Container(
+      decoration: BoxDecoration(
+        color: _themeColor.withValues(alpha: 0.08),
+        borderRadius: BorderRadius.circular(20),
+      ),
+      child: Row(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          _buildLangChip('en', 'English'),
+          _buildLangChip('kn', 'ಕನ್ನಡ'),
+        ],
+      ),
+    );
+  }
+
+  Widget _buildLangChip(String code, String label) {
+    final isSelected = _language == code;
+    return GestureDetector(
+      onTap: () {
+        if (_language != code) {
+          setState(() => _language = code);
+        }
+      },
+      child: AnimatedContainer(
+        duration: const Duration(milliseconds: 200),
+        padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
+        decoration: BoxDecoration(
+          color: isSelected ? _themeColor : Colors.transparent,
+          borderRadius: BorderRadius.circular(20),
+        ),
+        child: Text(
+          label,
+          style: TextStyle(
+            color: isSelected ? Colors.white : _themeColor,
+            fontWeight: isSelected ? FontWeight.w600 : FontWeight.w500,
+            fontSize: 13,
+          ),
+        ),
+      ),
+    );
+  }
+
   List<Map<String, dynamic>> _parseSections() {
-    final content = module.content;
-    if (content.containsKey('sections')) {
-      final sections = content['sections'];
+    final content = widget.module.content;
+    final key = (_language == 'kn' && _hasKannada) ? 'sections_kn' : 'sections';
+    if (content.containsKey(key)) {
+      final sections = content[key];
       if (sections is List) {
         final parsed = sections
             .map((s) => s is Map<String, dynamic> ? s : <String, dynamic>{})
