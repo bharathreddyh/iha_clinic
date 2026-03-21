@@ -3075,6 +3075,7 @@ Map<String, EducationTopicData> getObstetricsContent() {
 
     'preterm-labour': const EducationTopicData(
       titleEn: 'Preterm Labour',
+      titleKn: 'ಅಕಾಲಿಕ ಪ್ರಸವ',
       sectionsEn: [
         {
           'title': 'What Is Preterm Labour?',
@@ -3102,11 +3103,38 @@ Map<String, EducationTopicData> getObstetricsContent() {
               'If your baby is born prematurely, they may need care in a neonatal intensive care unit (NICU) or special care baby unit. The level of support depends on how early the baby is born and their condition. The neonatal team will keep you informed and involved in your baby\'s care.',
         },
       ],
-      sectionsKn: [],
+      sectionsKn: [
+        {
+          'title': 'ಅಕಾಲಿಕ ಪ್ರಸವ ಎಂದರೇನು?',
+          'body':
+              'ಅಕಾಲಿಕ ಪ್ರಸವವೆಂದರೆ ಗರ್ಭಾವಸ್ಥೆಯ 37 ವಾರಗಳ ಮೊದಲು ಆರಂಭವಾಗುವ ಪ್ರಸವ. ಇದು ಅಕಾಲಿಕ ಜನನಕ್ಕೆ ಕಾರಣವಾಗಬಹುದು, ಇದು ಶ್ವಾಸ ತೊಂದರೆಗಳು, ಆಹಾರ ಸಮಸ್ಯೆಗಳು ಮತ್ತು ವಿಶೇಷ ನವಜಾತ ಆರೈಕೆಯ ಅಗತ್ಯ ಸೇರಿದಂತೆ ಆರೋಗ್ಯ ಸವಾಲುಗಳೊಂದಿಗೆ ಸಂಬಂಧಿಸಿದೆ.',
+        },
+        {
+          'title': 'ಎಚ್ಚರಿಕೆ ಸಂಕೇತಗಳು',
+          'body':
+              'ಅಕಾಲಿಕ ಪ್ರಸವದ ಲಕ್ಷಣಗಳಲ್ಲಿ 37 ವಾರಗಳ ಮೊದಲು ನಿಯಮಿತ ಸಂಕೋಚನಗಳು, ಶ್ರೋಣಿಯಲ್ಲಿ ಒತ್ತಡದ ಭಾವನೆ, ಹೋಗದ ಕೆಳಬೆನ್ನು ನೋವು, ಯೋನಿ ಸ್ರಾವದಲ್ಲಿ ಬದಲಾವಣೆ (ವಿಶೇಷವಾಗಿ ನೀರಿನಂತಹ, ರಕ್ತಮಯ ಅಥವಾ ಲೋಳೆಯಂತಹ) ಮತ್ತು ಅತಿಸಾರದೊಂದಿಗೆ ಅಥವಾ ಇಲ್ಲದೆ ಹೊಟ್ಟೆ ಸೆಳೆತ ಸೇರಿವೆ.',
+        },
+        {
+          'title': 'ಅಪಾಯ ಅಂಶಗಳು',
+          'body':
+              'ಅಪಾಯ ಅಂಶಗಳಲ್ಲಿ ಹಿಂದಿನ ಅಕಾಲಿಕ ಜನನ, ಬಹು ಗರ್ಭಾವಸ್ಥೆ (ಅವಳಿ ಅಥವಾ ಹೆಚ್ಚು), ಗರ್ಭಕಂಠ ದೌರ್ಬಲ್ಯ, ಸೋಂಕುಗಳು (ವಿಶೇಷವಾಗಿ ಮೂತ್ರದ ಸೋಂಕುಗಳು), ಧೂಮಪಾನ ಮತ್ತು ಕೆಲವು ಗರ್ಭಾಶಯ ಅಸಹಜತೆಗಳು ಸೇರಿವೆ. ಆದರೆ ಯಾವುದೇ ಗುರುತಿಸಬಹುದಾದ ಅಪಾಯ ಅಂಶವಿಲ್ಲದೆಯೂ ಸಂಭವಿಸಬಹುದು.',
+        },
+        {
+          'title': 'ಚಿಕಿತ್ಸೆ',
+          'body':
+              'ಅಕಾಲಿಕ ಪ್ರಸವ ಶಂಕಿಸಿದರೆ, ಆಸ್ಪತ್ರೆಯಲ್ಲಿ ಮೌಲ್ಯಮಾಪನ ಮಾಡಲಾಗುತ್ತದೆ. ಚಿಕಿತ್ಸೆಯಲ್ಲಿ ಸಂಕೋಚನಗಳನ್ನು ನಿಧಾನಗೊಳಿಸಲು ಔಷಧಿಗಳು, ಹೆರಿಗೆ ಸಂಭವನೀಯವಾಗಿದ್ದರೆ ಮಗುವಿನ ಶ್ವಾಸಕೋಶ ಪಕ್ವಗೊಳಿಸಲು corticosteroid ಚುಚ್ಚುಮದ್ದುಗಳು, ಮತ್ತು 32 ವಾರಗಳ ಮೊದಲು ಹೆರಿಗೆ ನಿರೀಕ್ಷಿಸಿದರೆ ಮಗುವಿನ ಮೆದುಳನ್ನು ರಕ್ಷಿಸಲು magnesium sulphate ಸೇರಬಹುದು.',
+        },
+        {
+          'title': 'ನವಜಾತ ಆರೈಕೆ',
+          'body':
+              'ಮಗು ಅಕಾಲಿಕವಾಗಿ ಜನಿಸಿದರೆ, ನವಜಾತ ತೀವ್ರ ನಿಗಾ ಘಟಕ (NICU) ಅಥವಾ ವಿಶೇಷ ಆರೈಕೆ ಘಟಕದಲ್ಲಿ ಆರೈಕೆ ಅಗತ್ಯವಾಗಬಹುದು. ಬೆಂಬಲದ ಮಟ್ಟ ಮಗು ಎಷ್ಟು ಬೇಗ ಜನಿಸಿದೆ ಮತ್ತು ಅವರ ಸ್ಥಿತಿಯ ಮೇಲೆ ಅವಲಂಬಿತ. ನವಜಾತ ತಂಡ ನಿಮ್ಮನ್ನು ತಿಳಿಸುತ್ತಾ ಮತ್ತು ಆರೈಕೆಯಲ್ಲಿ ಒಳಗೊಳ್ಳುತ್ತಾರೆ.',
+        },
+      ],
     ),
 
     'obstetric-cholestasis': const EducationTopicData(
       titleEn: 'Obstetric Cholestasis (ICP)',
+      titleKn: 'ಪ್ರಸೂತಿ ಕೊಲೆಸ್ಟಾಸಿಸ್ (ICP)',
       sectionsEn: [
         {
           'title': 'What Is Obstetric Cholestasis?',
@@ -3129,11 +3157,33 @@ Map<String, EducationTopicData> getObstetricsContent() {
               'Ursodeoxycholic acid (UDCA) may be prescribed to lower bile acid levels and reduce itching. Emollients and antihistamines can help manage the itch. Early delivery, usually between 37 and 38 weeks, is often recommended to reduce the risk of complications. The condition resolves after delivery.',
         },
       ],
-      sectionsKn: [],
+      sectionsKn: [
+        {
+          'title': 'ಪ್ರಸೂತಿ ಕೊಲೆಸ್ಟಾಸಿಸ್ ಎಂದರೇನು?',
+          'body':
+              'ಪ್ರಸೂತಿ ಕೊಲೆಸ್ಟಾಸಿಸ್, intrahepatic cholestasis of pregnancy (ICP) ಎಂದೂ ಕರೆಯಲ್ಪಡುವ, ಗರ್ಭಾವಸ್ಥೆಯಲ್ಲಿ ಸಂಭವಿಸುವ ಯಕೃತ್ ಸ್ಥಿತಿ. ಇದು ರಕ್ತದಲ್ಲಿ ಪಿತ್ತ ಆಮ್ಲಗಳ ಸಂಗ್ರಹಕ್ಕೆ ಕಾರಣವಾಗಿ ತೀವ್ರ ತುರಿಕೆ ಉಂಟುಮಾಡುತ್ತದೆ, ಸಾಮಾನ್ಯವಾಗಿ ಅಂಗೈ ಮತ್ತು ಪಾದದ ಅಡಿಯಲ್ಲಿ, ರಾತ್ರಿ ಹೆಚ್ಚಾಗುತ್ತದೆ.',
+        },
+        {
+          'title': 'ರೋಗನಿರ್ಣಯ',
+          'body':
+              'ರೋಗನಿರ್ಣಯ ಲಕ್ಷಣಗಳು ಮತ್ತು ಹೆಚ್ಚಿದ ಪಿತ್ತ ಆಮ್ಲ ಮಟ್ಟಗಳನ್ನು ತೋರಿಸುವ ರಕ್ತ ಪರೀಕ್ಷೆಗಳ ಮೇಲೆ ಆಧಾರಿತ ಮತ್ತು ಕೆಲವೊಮ್ಮೆ ಅಸಹಜ ಯಕೃತ್ ಕಾರ್ಯ ಪರೀಕ್ಷೆಗಳು. ತುರಿಕೆ ಮತ್ತು ಯಕೃತ್ ಸಮಸ್ಯೆಗಳ ಇತರ ಕಾರಣಗಳನ್ನು ಮೊದಲು ಹೊರಗಿಡಲಾಗುತ್ತದೆ. ಲಕ್ಷಣಗಳು ಸಾಮಾನ್ಯವಾಗಿ ಮೂರನೇ ತ್ರೈಮಾಸಿಕದಲ್ಲಿ ಆರಂಭವಾಗುತ್ತವೆ.',
+        },
+        {
+          'title': 'ಅಪಾಯಗಳು',
+          'body':
+              'ICP ಅಕಾಲಿಕ ಜನನ ಮತ್ತು ಅಪರೂಪವಾಗಿ ಮೃತ ಜನನದ ಹೆಚ್ಚಿದ ಅಪಾಯದೊಂದಿಗೆ ಸಂಬಂಧಿಸಿದೆ. ಹೆಚ್ಚಿನ ಪಿತ್ತ ಆಮ್ಲ ಮಟ್ಟಗಳೊಂದಿಗೆ ಅಪಾಯ ಹೆಚ್ಚಾಗುತ್ತದೆ. ಗರ್ಭಾವಸ್ಥೆಯ ಉಳಿದ ಅವಧಿಯಲ್ಲಿ ಪಿತ್ತ ಆಮ್ಲ ಮಟ್ಟಗಳು ಮತ್ತು ಯಕೃತ್ ಕಾರ್ಯದ ನಿಯಮಿತ ಮೇಲ್ವಿಚಾರಣೆ ಮುಖ್ಯ.',
+        },
+        {
+          'title': 'ಚಿಕಿತ್ಸೆ ಮತ್ತು ಹೆರಿಗೆ',
+          'body':
+              'ಪಿತ್ತ ಆಮ್ಲ ಮಟ್ಟಗಳನ್ನು ಕಡಿಮೆ ಮಾಡಲು ಮತ್ತು ತುರಿಕೆ ಕಡಿಮೆ ಮಾಡಲು Ursodeoxycholic acid (UDCA) ಶಿಫಾರಸು ಮಾಡಬಹುದು. ತೊಡಕುಗಳ ಅಪಾಯ ಕಡಿಮೆ ಮಾಡಲು ಸಾಮಾನ್ಯವಾಗಿ 37 ರಿಂದ 38 ವಾರಗಳ ನಡುವೆ ಬೇಗ ಹೆರಿಗೆ ಶಿಫಾರಸು ಮಾಡಲಾಗುತ್ತದೆ. ಹೆರಿಗೆ ನಂತರ ಸ್ಥಿತಿ ಹೋಗುತ್ತದೆ.',
+        },
+      ],
     ),
 
     'group-b-strep': const EducationTopicData(
       titleEn: 'Group B Streptococcus (GBS) in Pregnancy',
+      titleKn: 'ಗರ್ಭಾವಸ್ಥೆಯಲ್ಲಿ ಗ್ರೂಪ್ B ಸ್ಟ್ರೆಪ್ಟೋಕಾಕಸ್ (GBS)',
       sectionsEn: [
         {
           'title': 'What Is GBS?',
@@ -3156,11 +3206,33 @@ Map<String, EducationTopicData> getObstetricsContent() {
               'If you are known to carry GBS, intravenous antibiotics (usually penicillin) are given during labour to reduce the risk of transmission to the baby. Antibiotics are most effective when given at least four hours before delivery. Your baby will be observed closely after birth for any signs of infection.',
         },
       ],
-      sectionsKn: [],
+      sectionsKn: [
+        {
+          'title': 'GBS ಎಂದರೇನು?',
+          'body':
+              'ಗ್ರೂಪ್ B ಸ್ಟ್ರೆಪ್ಟೋಕಾಕಸ್ (GBS) ಸುಮಾರು 20 ರಿಂದ 30% ಮಹಿಳೆಯರ ಯೋನಿ ಮತ್ತು ಕರುಳಿನಲ್ಲಿ ಹಾನಿಕಾರಕವಿಲ್ಲದೆ ಬದುಕುವ ಸಾಮಾನ್ಯ ಬ್ಯಾಕ್ಟೀರಿಯಾ. ಇದು ಸಾಮಾನ್ಯವಾಗಿ ಯಾವುದೇ ಲಕ್ಷಣ ಉಂಟುಮಾಡುವುದಿಲ್ಲ ಮತ್ತು ಲೈಂಗಿಕ ಸೋಂಕಲ್ಲ. ಆದರೆ ಪ್ರಸವ ಮತ್ತು ಹೆರಿಗೆ ಸಮಯದಲ್ಲಿ ಕೆಲವೊಮ್ಮೆ ಮಗುವಿಗೆ ಹರಡಬಹುದು.',
+        },
+        {
+          'title': 'ಮಗುವಿಗೆ ಅಪಾಯ',
+          'body':
+              'ಅಪರೂಪ ಸಂದರ್ಭಗಳಲ್ಲಿ, GBS ನವಜಾತ ಶಿಶುಗಳಲ್ಲಿ ರಕ್ತ ವಿಷ (sepsis), ನ್ಯುಮೋನಿಯಾ ಮತ್ತು ಮೆನಿಂಜೈಟಿಸ್ ಸೇರಿದಂತೆ ಗಂಭೀರ ಸೋಂಕು ಉಂಟುಮಾಡಬಹುದು. ಆರಂಭಿಕ GBS ರೋಗ ಜೀವನದ ಮೊದಲ ಏಳು ದಿನಗಳಲ್ಲಿ, ಸಾಮಾನ್ಯವಾಗಿ ಹುಟ್ಟಿನ 24 ಗಂಟೆಗಳಲ್ಲಿ ಸಂಭವಿಸುತ್ತದೆ.',
+        },
+        {
+          'title': 'ಸ್ಕ್ರೀನಿಂಗ್ ಮತ್ತು ಪತ್ತೆ',
+          'body':
+              'ಗರ್ಭಾವಸ್ಥೆಯಲ್ಲಿ ಮೂತ್ರ ಪರೀಕ್ಷೆ ಅಥವಾ ಯೋನಿ ಸ್ವಾಬ್‌ಗಳಲ್ಲಿ GBS ಆಕಸ್ಮಿಕವಾಗಿ ಪತ್ತೆಯಾಗಬಹುದು. ಕೆಲವು ದೇಶಗಳು 35 ರಿಂದ 37 ವಾರಗಳಲ್ಲಿ ಯೋನಿ ಮತ್ತು ಗುದನಾಳ ಸ್ವಾಬ್‌ನೊಂದಿಗೆ ನಿಯಮಿತ ಸ್ಕ್ರೀನಿಂಗ್ ನೀಡುತ್ತವೆ. GBS ಸ್ಕ್ರೀನಿಂಗ್ ನಿಮಗೆ ಶಿಫಾರಸು ಮಾಡಲಾಗಿದೆಯೇ ಎಂದು ವೈದ್ಯರೊಂದಿಗೆ ಚರ್ಚಿಸಿ.',
+        },
+        {
+          'title': 'ಪ್ರಸವ ಸಮಯದ ತಡೆಗಟ್ಟುವಿಕೆ',
+          'body':
+              'ನೀವು GBS ವಾಹಕರು ಎಂದು ತಿಳಿದಿದ್ದರೆ, ಮಗುವಿಗೆ ಹರಡುವ ಅಪಾಯ ಕಡಿಮೆ ಮಾಡಲು ಪ್ರಸವ ಸಮಯದಲ್ಲಿ ನಾಳದ ಮೂಲಕ ಪ್ರತಿಜೀವಕಗಳನ್ನು (ಸಾಮಾನ್ಯವಾಗಿ penicillin) ನೀಡಲಾಗುತ್ತದೆ. ಹೆರಿಗೆಗೆ ಕನಿಷ್ಠ ನಾಲ್ಕು ಗಂಟೆ ಮೊದಲು ನೀಡಿದಾಗ ಪ್ರತಿಜೀವಕಗಳು ಹೆಚ್ಚು ಪರಿಣಾಮಕಾರಿ.',
+        },
+      ],
     ),
 
     'cord-prolapse': const EducationTopicData(
       titleEn: 'Umbilical Cord Prolapse',
+      titleKn: 'ಹೊಕ್ಕುಳಬಳ್ಳಿ ಜಾರುವಿಕೆ',
       sectionsEn: [
         {
           'title': 'What Is Cord Prolapse?',
@@ -3183,11 +3255,33 @@ Map<String, EducationTopicData> getObstetricsContent() {
               'Cord prolapse usually requires an emergency caesarean section to deliver the baby as quickly as possible. If detected in hospital, the medical team will act rapidly. Outcomes are generally good when the condition is recognised and treated promptly.',
         },
       ],
-      sectionsKn: [],
+      sectionsKn: [
+        {
+          'title': 'ಹೊಕ್ಕುಳಬಳ್ಳಿ ಜಾರುವಿಕೆ ಎಂದರೇನು?',
+          'body':
+              'ಹೊಕ್ಕುಳಬಳ್ಳಿ ಜಾರುವಿಕೆ ಎಂದರೆ ಪೊರೆಗಳು ಒಡೆದ ನಂತರ ಹೊಕ್ಕುಳಬಳ್ಳಿ ಗರ್ಭಕಂಠದ ಮೂಲಕ ಮಗುವಿನ ಮುಂದೆ ಅಥವಾ ಜೊತೆಗೆ ಜಾರುವುದು. ಇದು ಪ್ರಸೂತಿ ತುರ್ತುಸ್ಥಿತಿ ಏಕೆಂದರೆ ಬಳ್ಳಿ ಒತ್ತಲ್ಪಡಬಹುದು, ಮಗುವಿನ ರಕ್ತ ಮತ್ತು ಆಮ್ಲಜನಕ ಪೂರೈಕೆಯನ್ನು ಕಡಿತಗೊಳಿಸಬಹುದು.',
+        },
+        {
+          'title': 'ಅಪಾಯ ಅಂಶಗಳು',
+          'body':
+              'ಅಪಾಯ ಅಂಶಗಳಲ್ಲಿ ಮಗು ಬ್ರೀಚ್ ಅಥವಾ ಅಡ್ಡ ಸ್ಥಾನದಲ್ಲಿರುವುದು, ಅಕಾಲಿಕ ಪೊರೆ ಒಡೆಯುವಿಕೆ, polyhydramnios (ಅಧಿಕ ಆಮ್ನಿಯೋಟಿಕ್ ದ್ರವ), ಉದ್ದ ಹೊಕ್ಕುಳಬಳ್ಳಿ ಮತ್ತು ಬಹು ಗರ್ಭಾವಸ್ಥೆಗಳು ಸೇರಿವೆ. ಆದರೆ ಯಾವುದೇ ತಿಳಿದ ಅಪಾಯ ಅಂಶವಿಲ್ಲದೆಯೂ ಸಂಭವಿಸಬಹುದು.',
+        },
+        {
+          'title': 'ಏನು ಮಾಡಬೇಕು',
+          'body':
+              'ನಿಮ್ಮ ನೀರು ಒಡೆದ ನಂತರ ಯೋನಿಯಲ್ಲಿ ಬಳ್ಳಿ ಕಂಡರೆ ಅಥವಾ ಅನುಭವಿಸಿದರೆ, ತಕ್ಷಣ ಆಂಬುಲೆನ್ಸ್ ಕರೆಯಿರಿ. ಕೈ ಮತ್ತು ಮಂಡಿಯ ಮೇಲೆ ಕುಳಿತು ಎದೆ ಕೆಳಗೆ ಮತ್ತು ಹಿಂಭಾಗ ಮೇಲೆ ಇರಿಸಿ ಬಳ್ಳಿಯ ಮೇಲೆ ಒತ್ತಡ ಕಡಿಮೆ ಮಾಡಿ. ಬಳ್ಳಿಯನ್ನು ಹಿಂದೆ ತಳ್ಳಲು ಪ್ರಯತ್ನಿಸಬೇಡಿ.',
+        },
+        {
+          'title': 'ತುರ್ತು ಹೆರಿಗೆ',
+          'body':
+              'ಹೊಕ್ಕುಳಬಳ್ಳಿ ಜಾರುವಿಕೆಗೆ ಸಾಮಾನ್ಯವಾಗಿ ಮಗುವನ್ನು ಸಾಧ್ಯವಾದಷ್ಟು ಬೇಗ ಹೆರಿಗೆ ಮಾಡಿಸಲು ತುರ್ತು caesarean section ಅಗತ್ಯ. ಆಸ್ಪತ್ರೆಯಲ್ಲಿ ಪತ್ತೆಯಾದರೆ, ವೈದ್ಯಕೀಯ ತಂಡ ತ್ವರಿತವಾಗಿ ಕ್ರಮ ತೆಗೆದುಕೊಳ್ಳುತ್ತದೆ. ಸ್ಥಿತಿಯನ್ನು ಗುರುತಿಸಿ ತ್ವರಿತವಾಗಿ ಚಿಕಿತ್ಸೆ ನೀಡಿದಾಗ ಫಲಿತಾಂಶಗಳು ಸಾಮಾನ್ಯವಾಗಿ ಉತ್ತಮ.',
+        },
+      ],
     ),
 
     'postpartum-haemorrhage': const EducationTopicData(
       titleEn: 'Postpartum Haemorrhage',
+      titleKn: 'ಹೆರಿಗೆ ನಂತರದ ರಕ್ತಸ್ರಾವ',
       sectionsEn: [
         {
           'title': 'What Is Postpartum Haemorrhage?',
@@ -3215,11 +3309,38 @@ Map<String, EducationTopicData> getObstetricsContent() {
               'After going home, seek urgent medical attention if you experience heavy bleeding (soaking more than one pad per hour), passing large blood clots, feeling dizzy, faint, or having a racing heart, or if bleeding that had been decreasing suddenly increases. These may indicate secondary PPH.',
         },
       ],
-      sectionsKn: [],
+      sectionsKn: [
+        {
+          'title': 'ಹೆರಿಗೆ ನಂತರದ ರಕ್ತಸ್ರಾವ ಎಂದರೇನು?',
+          'body':
+              'ಹೆರಿಗೆ ನಂತರದ ರಕ್ತಸ್ರಾವ (PPH) ಎಂದರೆ ಹೆರಿಗೆ ನಂತರ ಅತಿಯಾದ ರಕ್ತಸ್ರಾವ — ಯೋನಿ ಹೆರಿಗೆ ನಂತರ 500 ಮಿಲಿಲೀಟರ್‌ಗಿಂತ ಹೆಚ್ಚು ಅಥವಾ caesarean section ನಂತರ 1000 ಮಿಲಿಲೀಟರ್‌ಗಿಂತ ಹೆಚ್ಚು. ಇದು ಹೆರಿಗೆಯ ತಕ್ಷಣ ನಂತರ (ಪ್ರಾಥಮಿಕ PPH) ಅಥವಾ 24 ಗಂಟೆಗಳಿಂದ 12 ವಾರಗಳ ನಡುವೆ (ದ್ವಿತೀಯಕ PPH) ಸಂಭವಿಸಬಹುದು.',
+        },
+        {
+          'title': 'ಕಾರಣಗಳು',
+          'body':
+              'ಅತ್ಯಂತ ಸಾಮಾನ್ಯ ಕಾರಣ ಗರ್ಭಾಶಯ ಅಟೋನಿ — ಹೆರಿಗೆ ನಂತರ ಗರ್ಭಾಶಯ ಪರಿಣಾಮಕಾರಿಯಾಗಿ ಸಂಕುಚಿಸದಿರುವುದು. ಇತರ ಕಾರಣಗಳಲ್ಲಿ ಉಳಿದ ಜರಾಯು ಅಂಗಾಂಶ, ಜನನ ನಾಳದ ಹರಿತಗಳು ಮತ್ತು ರಕ್ತ ಹೆಪ್ಪುಗಟ್ಟುವಿಕೆ ಅಸ್ವಸ್ಥತೆಗಳು ಸೇರಿವೆ.',
+        },
+        {
+          'title': 'ಚಿಕಿತ್ಸೆ',
+          'body':
+              'ಚಿಕಿತ್ಸೆ ಕಾರಣ ಮತ್ತು ತೀವ್ರತೆಯ ಮೇಲೆ ಅವಲಂಬಿತ. ಗರ್ಭಾಶಯ ಮಸಾಜ್, ಗರ್ಭಾಶಯ ಸಂಕೋಚನ ಪ್ರಚೋದಿಸಲು ಔಷಧಿಗಳು, ನಾಳದ ಮೂಲಕ ದ್ರವಗಳು, ರಕ್ತ ವರ್ಗಾವಣೆ, ಉಳಿದ ಅಂಗಾಂಶ ತೆಗೆಯುವಿಕೆ ಮತ್ತು ಹರಿತಗಳ ದುರಸ್ತಿ ಸೇರಬಹುದು. ತೀವ್ರ ಸಂದರ್ಭಗಳಲ್ಲಿ ಶಸ್ತ್ರಚಿಕಿತ್ಸೆ ಅಗತ್ಯವಾಗಬಹುದು.',
+        },
+        {
+          'title': 'ಅಪಾಯ ಅಂಶಗಳು',
+          'body':
+              'ಅಪಾಯ ಅಂಶಗಳಲ್ಲಿ ಹಿಂದಿನ PPH, ದೀರ್ಘ ಪ್ರಸವ, ಬಹು ಗರ್ಭಾವಸ್ಥೆ, polyhydramnios, ದೊಡ್ಡ ಮಗು, ಪ್ರಿ-ಎಕ್ಲಾಂಪ್ಸಿಯಾ ಮತ್ತು ಕೆಲವು ಔಷಧಿಗಳು ಸೇರಿವೆ. ನಿಮ್ಮ ಆರೋಗ್ಯ ತಂಡ ನಿಮ್ಮ ಅಪಾಯವನ್ನು ಮೌಲ್ಯಮಾಪನ ಮಾಡಿ ಹೆರಿಗೆ ಸಮಯದಲ್ಲಿ ತಡೆಗಟ್ಟುವ ಕ್ರಮಗಳನ್ನು ತೆಗೆದುಕೊಳ್ಳುತ್ತಾರೆ.',
+        },
+        {
+          'title': 'ಡಿಸ್ಚಾರ್ಜ್ ನಂತರದ ಎಚ್ಚರಿಕೆ ಸಂಕೇತಗಳು',
+          'body':
+              'ಮನೆಗೆ ಹೋದ ನಂತರ, ಭಾರೀ ರಕ್ತಸ್ರಾವ (ಗಂಟೆಗೆ ಒಂದಕ್ಕಿಂತ ಹೆಚ್ಚು ಪ್ಯಾಡ್ ನೆನೆಯುವಷ್ಟು), ದೊಡ್ಡ ರಕ್ತ ಹೆಪ್ಪುಗಳು, ತಲೆತಿರುಗುವಿಕೆ, ಮೂರ್ಛೆ ಅಥವಾ ವೇಗದ ಹೃದಯ ಬಡಿತ ಅನುಭವಿಸಿದರೆ, ಅಥವಾ ಕಡಿಮೆಯಾಗುತ್ತಿದ್ದ ರಕ್ತಸ್ರಾವ ಹಠಾತ್ ಹೆಚ್ಚಾದರೆ ತುರ್ತು ವೈದ್ಯಕೀಯ ಸಹಾಯ ಪಡೆಯಿರಿ.',
+        },
+      ],
     ),
 
     'venous-thromboembolism-pregnancy': const EducationTopicData(
       titleEn: 'Blood Clots in Pregnancy (VTE)',
+      titleKn: 'ಗರ್ಭಾವಸ್ಥೆಯಲ್ಲಿ ರಕ್ತ ಹೆಪ್ಪುಗಟ್ಟುವಿಕೆ (VTE)',
       sectionsEn: [
         {
           'title': 'What Is VTE?',
@@ -3242,11 +3363,33 @@ Map<String, EducationTopicData> getObstetricsContent() {
               'If you are at increased risk, you may be prescribed low-molecular-weight heparin injections and compression stockings. Staying active, keeping well hydrated, and avoiding prolonged immobility also help. If a blood clot is diagnosed, anticoagulant treatment is given and is safe during pregnancy and breastfeeding.',
         },
       ],
-      sectionsKn: [],
+      sectionsKn: [
+        {
+          'title': 'VTE ಎಂದರೇನು?',
+          'body':
+              'ಸಿರೆ ಥ್ರಂಬೋಎಂಬಾಲಿಸಮ್ (VTE) ಆಳವಾದ ಸಿರೆ ಥ್ರಂಬೋಸಿಸ್ (DVT) — ಸಾಮಾನ್ಯವಾಗಿ ಕಾಲಿನ ಆಳವಾದ ಸಿರೆಯಲ್ಲಿ ರಕ್ತ ಹೆಪ್ಪು — ಮತ್ತು ಶ್ವಾಸಕೋಶ ಎಂಬಾಲಿಸಮ್ (PE) — ಹೆಪ್ಪು ಶ್ವಾಸಕೋಶಕ್ಕೆ ಚಲಿಸಿದಾಗ ಒಳಗೊಂಡಿದೆ. ರಕ್ತ ಹೆಪ್ಪುಗಟ್ಟುವಿಕೆ, ರಕ್ತ ಹರಿವು ಮತ್ತು ರಕ್ತನಾಳಗಳಲ್ಲಿ ಬದಲಾವಣೆಯಿಂದ ಗರ್ಭಾವಸ್ಥೆ VTE ಅಪಾಯವನ್ನು ಹೆಚ್ಚಿಸುತ್ತದೆ.',
+        },
+        {
+          'title': 'ಗಮನಿಸಬೇಕಾದ ಲಕ್ಷಣಗಳು',
+          'body':
+              'DVT ಲಕ್ಷಣಗಳಲ್ಲಿ ಒಂದು ಕಾಲಿನಲ್ಲಿ ನೋವು, ಊತ, ಕೆಂಪು ಮತ್ತು ಬಿಸಿ ಸೇರಿವೆ — ಸಾಮಾನ್ಯವಾಗಿ ಮೀನಖಂಡ ಅಥವಾ ತೊಡೆ. PE ಲಕ್ಷಣಗಳಲ್ಲಿ ಹಠಾತ್ ಉಸಿರಾಟ ತೊಂದರೆ, ಎದೆ ನೋವು (ವಿಶೇಷವಾಗಿ ಉಸಿರಾಡುವಾಗ) ಮತ್ತು ಕೆಮ್ಮು ಸೇರಿವೆ. ಈ ಲಕ್ಷಣಗಳಿದ್ದರೆ ತುರ್ತು ವೈದ್ಯಕೀಯ ಸಹಾಯ ಪಡೆಯಿರಿ.',
+        },
+        {
+          'title': 'ಅಪಾಯ ಅಂಶಗಳು',
+          'body':
+              'ಅಪಾಯ ಅಂಶಗಳಲ್ಲಿ ಹಿಂದಿನ VTE, ರಕ್ತ ಹೆಪ್ಪುಗಳ ಕುಟುಂಬ ಇತಿಹಾಸ, ಬೊಜ್ಜು, ಚಲನೆಯಿಲ್ಲದಿರುವಿಕೆ (ದೀರ್ಘ ಪ್ರಯಾಣ ಸೇರಿದಂತೆ), caesarean section, ಪ್ರಿ-ಎಕ್ಲಾಂಪ್ಸಿಯಾ ಮತ್ತು ಕೆಲವು ಆನುವಂಶಿಕ ರಕ್ತ ಹೆಪ್ಪುಗಟ್ಟುವಿಕೆ ಸ್ಥಿತಿಗಳು ಸೇರಿವೆ.',
+        },
+        {
+          'title': 'ತಡೆಗಟ್ಟುವಿಕೆ ಮತ್ತು ಚಿಕಿತ್ಸೆ',
+          'body':
+              'ಹೆಚ್ಚಿದ ಅಪಾಯವಿದ್ದರೆ, ಕಡಿಮೆ-ಅಣು-ತೂಕ heparin ಚುಚ್ಚುಮದ್ದುಗಳು ಮತ್ತು ಒತ್ತಡ ಸ್ಟಾಕಿಂಗ್‌ಗಳನ್ನು ಶಿಫಾರಸು ಮಾಡಬಹುದು. ಸಕ್ರಿಯವಾಗಿರುವುದು, ಚೆನ್ನಾಗಿ ನೀರು ಕುಡಿಯುವುದು ಮತ್ತು ದೀರ್ಘ ಚಲನೆಯಿಲ್ಲದಿರುವಿಕೆ ತಪ್ಪಿಸುವುದು ಸಹಾಯ ಮಾಡುತ್ತದೆ. ರಕ್ತ ಹೆಪ್ಪು ಪತ್ತೆಯಾದರೆ, ಹೆಪ್ಪುರೋಧಕ ಚಿಕಿತ್ಸೆ ನೀಡಲಾಗುತ್ತದೆ ಮತ್ತು ಗರ್ಭಾವಸ್ಥೆ ಮತ್ತು ಸ್ತನ್ಯಪಾನ ಸಮಯದಲ್ಲಿ ಸುರಕ್ಷಿತ.',
+        },
+      ],
     ),
 
     'amniotic-fluid-disorders': const EducationTopicData(
       titleEn: 'Amniotic Fluid Disorders',
+      titleKn: 'ಆಮ್ನಿಯೋಟಿಕ್ ದ್ರವ ಅಸ್ವಸ್ಥತೆಗಳು',
       sectionsEn: [
         {
           'title': 'Normal Amniotic Fluid',
@@ -3269,7 +3412,28 @@ Map<String, EducationTopicData> getObstetricsContent() {
               'Both conditions are usually detected on ultrasound. Management depends on the cause, severity, and stage of pregnancy. It may include treating underlying conditions, amnioreduction (draining excess fluid), increased monitoring of the baby, or planning delivery at the appropriate time.',
         },
       ],
-      sectionsKn: [],
+      sectionsKn: [
+        {
+          'title': 'ಸಾಮಾನ್ಯ ಆಮ್ನಿಯೋಟಿಕ್ ದ್ರವ',
+          'body':
+              'ಆಮ್ನಿಯೋಟಿಕ್ ದ್ರವ ಗರ್ಭದಲ್ಲಿ ಮಗುವನ್ನು ಸುತ್ತುವರಿದು ರಕ್ಷಿಸುತ್ತದೆ. ಇದು ಮಗು ಚಲಿಸಲು ಮತ್ತು ಬೆಳೆಯಲು ಅನುವು ಮಾಡಿಕೊಡುತ್ತದೆ, ಉಷ್ಣಾಂಶ ಕಾಪಾಡುತ್ತದೆ ಮತ್ತು ಗಾಯದಿಂದ ರಕ್ಷಿಸುತ್ತದೆ. ಪ್ರಮಾಣ ಗರ್ಭಾವಸ್ಥೆಯ ಉದ್ದಕ್ಕೂ ಹೆಚ್ಚಾಗುತ್ತದೆ, ಸುಮಾರು 36 ವಾರಗಳಲ್ಲಿ ಗರಿಷ್ಠ ತಲುಪಿ ನಂತರ ಕ್ರಮೇಣ ಕಡಿಮೆಯಾಗುತ್ತದೆ.',
+        },
+        {
+          'title': 'Polyhydramnios',
+          'body':
+              'Polyhydramnios ಎಂದರೆ ಅತಿಯಾದ ಆಮ್ನಿಯೋಟಿಕ್ ದ್ರವ. ಇದು ಗರ್ಭಾಶಯ ಬಹಳ ದೊಡ್ಡದಾಗಲು ಕಾರಣವಾಗಿ ಅಸ್ವಸ್ಥತೆ, ಉಸಿರಾಟ ತೊಂದರೆ ಮತ್ತು ಅಕಾಲಿಕ ಸಂಕೋಚನಗಳನ್ನು ಉಂಟುಮಾಡಬಹುದು. ಕಾರಣಗಳಲ್ಲಿ ಗರ್ಭಾವಸ್ಥೆ ಮಧುಮೇಹ, ಭ್ರೂಣದ ನುಂಗುವ ಸಮಸ್ಯೆಗಳು ಅಥವಾ ಸೋಂಕುಗಳು ಸೇರಿವೆ, ಆದರೆ ಆಗಾಗ್ಗೆ ಕಾರಣ ಕಂಡುಬರುವುದಿಲ್ಲ.',
+        },
+        {
+          'title': 'Oligohydramnios',
+          'body':
+              'Oligohydramnios ಎಂದರೆ ಕಡಿಮೆ ಆಮ್ನಿಯೋಟಿಕ್ ದ್ರವ. ಇದು ಮಗುವಿನ ಮೂತ್ರಪಿಂಡಗಳು ಸಾಕಷ್ಟು ಮೂತ್ರ ಉತ್ಪಾದಿಸದಿರುವುದು, ಪೊರೆಗಳು ಒಡೆಯುವುದು, ಜರಾಯು ಸಮಸ್ಯೆಗಳು ಅಥವಾ ಕೆಲವು ಔಷಧಿಗಳೊಂದಿಗೆ ಸಂಬಂಧಿಸಬಹುದು. ಕಡಿಮೆ ದ್ರವ ಮಟ್ಟ ಮಗುವಿನ ಚಲನೆ ಮತ್ತು ಬೆಳವಣಿಗೆ ನಿರ್ಬಂಧಿಸಬಹುದು.',
+        },
+        {
+          'title': 'ಮೇಲ್ವಿಚಾರಣೆ ಮತ್ತು ನಿರ್ವಹಣೆ',
+          'body':
+              'ಎರಡೂ ಸ್ಥಿತಿಗಳನ್ನು ಸಾಮಾನ್ಯವಾಗಿ ಅಲ್ಟ್ರಾಸೌಂಡ್‌ನಲ್ಲಿ ಪತ್ತೆ ಮಾಡಲಾಗುತ್ತದೆ. ನಿರ್ವಹಣೆ ಕಾರಣ, ತೀವ್ರತೆ ಮತ್ತು ಗರ್ಭಾವಸ್ಥೆಯ ಹಂತದ ಮೇಲೆ ಅವಲಂಬಿತ. ಮೂಲ ಸ್ಥಿತಿಗಳ ಚಿಕಿತ್ಸೆ, amnioreduction (ಅಧಿಕ ದ್ರವ ಹೊರಗೆ ತೆಗೆಯುವುದು), ಮಗುವಿನ ಹೆಚ್ಚಿದ ಮೇಲ್ವಿಚಾರಣೆ ಅಥವಾ ಸೂಕ್ತ ಸಮಯದಲ್ಲಿ ಹೆರಿಗೆ ಯೋಜಿಸುವುದು ಸೇರಬಹುದು.',
+        },
+      ],
     ),
   };
 }
