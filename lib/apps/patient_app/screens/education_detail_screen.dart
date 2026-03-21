@@ -73,7 +73,7 @@ class _EducationDetailScreenState extends State<EducationDetailScreen> {
         backgroundColor: const Color(0xFF0D1B2A),
         foregroundColor: Colors.white,
         actions: [
-          if (_hasKannada) _buildLanguageToggle(),
+          _buildLanguageToggle(),
           const SizedBox(width: 8),
         ],
       ),
@@ -113,8 +113,18 @@ class _EducationDetailScreenState extends State<EducationDetailScreen> {
 
   Widget _buildLangChip(String code, String label) {
     final isSelected = _language == code;
+    final isDisabled = code == 'kn' && !_hasKannada;
     return GestureDetector(
       onTap: () {
+        if (isDisabled) {
+          ScaffoldMessenger.of(context).showSnackBar(
+            const SnackBar(
+              content: Text('Kannada translation is not yet available for this topic'),
+              duration: Duration(seconds: 2),
+            ),
+          );
+          return;
+        }
         if (_language != code) {
           setState(() => _language = code);
         }
@@ -123,13 +133,17 @@ class _EducationDetailScreenState extends State<EducationDetailScreen> {
         duration: const Duration(milliseconds: 200),
         padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
         decoration: BoxDecoration(
-          color: isSelected ? _themeColor : Colors.transparent,
+          color: isSelected && !isDisabled ? _themeColor : Colors.transparent,
           borderRadius: BorderRadius.circular(20),
         ),
         child: Text(
           label,
           style: TextStyle(
-            color: isSelected ? Colors.white : _themeColor,
+            color: isDisabled
+                ? _themeColor.withValues(alpha: 0.35)
+                : isSelected
+                    ? Colors.white
+                    : _themeColor,
             fontWeight: isSelected ? FontWeight.w600 : FontWeight.w500,
             fontSize: 13,
           ),
