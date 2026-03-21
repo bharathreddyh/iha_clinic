@@ -7,6 +7,7 @@ Map<String, EducationTopicData> getGeneralContent() => {
 
       'menopause-perimenopause': const EducationTopicData(
         titleEn: 'Menopause & Perimenopause',
+        titleKn: 'ಋತುಬಂಧ ಮತ್ತು ಋತುಬಂಧಪೂರ್ವ ಅವಧಿ',
         sectionsEn: [
           {
             'title': 'What Is Menopause?',
@@ -175,6 +176,7 @@ Map<String, EducationTopicData> getGeneralContent() => {
 
       'oral-contraceptive-pills': const EducationTopicData(
         titleEn: 'Oral Contraceptive Pills',
+        titleKn: 'ಮೌಖಿಕ ಗರ್ಭನಿರೋಧಕ ಮಾತ್ರೆಗಳು',
         sectionsEn: [
           {
             'title': 'What Are Oral Contraceptive Pills?',
@@ -425,6 +427,7 @@ Map<String, EducationTopicData> getGeneralContent() => {
 
       'pap-smear-hpv': const EducationTopicData(
         titleEn: 'Pap Smear & HPV Testing',
+        titleKn: 'Pap Smear ಮತ್ತು HPV ಪರೀಕ್ಷೆ',
         sectionsEn: [
           {
             'title': 'What Is a Pap Smear?',
@@ -593,6 +596,7 @@ Map<String, EducationTopicData> getGeneralContent() => {
 
       'iron-deficiency-anaemia': const EducationTopicData(
         titleEn: 'Iron Deficiency Anaemia',
+        titleKn: 'ಕಬ್ಬಿಣದ ಕೊರತೆಯ ರಕ್ತಹೀನತೆ',
         sectionsEn: [
           {
             'title': 'What Is Iron Deficiency Anaemia?',
@@ -970,6 +974,7 @@ Map<String, EducationTopicData> getGeneralContent() => {
 
       'pelvic-floor-exercises': const EducationTopicData(
         titleEn: 'Pelvic Floor Exercises',
+        titleKn: 'ಶ್ರೋಣಿ ತಳದ ವ್ಯಾಯಾಮಗಳು',
         sectionsEn: [
           {
             'title': 'What Is the Pelvic Floor?',
